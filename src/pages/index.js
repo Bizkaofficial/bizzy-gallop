@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import "../index.css"
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
 
@@ -15,7 +15,7 @@ const Home = () => {
                 <div className="col-6">
                     <h2>A portfolio Hosting Platform for Data Analysts</h2>
                     <p>No more stress. Upload your works. Share them to anyone. Increase your competence.</p>
-                    <button className="text-white btn bg-bizka" onClick={() => navigate("/register")}>Get Started for free</button>
+                    <button className="text-white btn bg-bizka" onClick={() => navigate("/accounts/register")}>Get Started for free</button>
                 </div>
                 <div className="shadow col-6">
                     <img src="graphs" alt="graph" />

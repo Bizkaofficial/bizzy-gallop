@@ -5,10 +5,10 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm navbar-light bg-light ">
       <div className="container ">
-        <Link to="/" className="navbar-brand mt-0 h1">
+        <Link to="/" className="navbar-brand h1">
           <img
             className="d-flex align-top"
-            src="https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/240584989_173622064794381_4485450073447507273_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=106&ccb=1-5&_nc_sid=dd9801&_nc_ohc=GAuAYNnQhUYAX_dVVj1&_nc_ht=scontent-los2-1.xx&oh=00_AT-21u1XYljMTSNYE4nC9Pj-TwfGBhBzs9mopxmiIf69lw&oe=624D2B6C"
+            src="/assets/bizka_bizka_bg.png"
             height={"90rem"}
             alt="bizkalogo"
           />

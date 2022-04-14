@@ -1,22 +1,33 @@
 import { useFormik } from "formik";
 import axios from 'axios';
-// import logo from "../assets/logo.PNG";
-// import bgRegister from '../assets/sign-up.jfif';
 import * as Yup from "yup";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from "react-redux";
+import { registerUser } from "../actions";
 
 const Register = () => {
 
+    const [errorss, setErrorss] = useState("");
+
     const [showPwd, setShowPwd] = useState(false);
+    const dispatch = useDispatch();
+    const first_name = useSelector(state=> state.usersReducer.first_name);
+    const last_name = useSelector(state=> state.usersReducer.last_name);
+    const email = useSelector(state=> state.usersReducer.email);
+    const phone_number = useSelector(state=> state.usersReducer.phone_number);
+    const password = useSelector(state=> state.usersReducer.password);
+    const username = useSelector(state=> state.usersReducer.username);
+    const er = useSelector(state=> state.usersReducer.error);
 
     const formik = useFormik({
         initialValues : {
-            fullname: "",
-            username: "",
-            email: "",
-            phone : "",
-            password: "",
+            first_name: first_name,
+            last_name: last_name,
+            username: username,
+            email: email,
+            phone_number : phone_number,
+            password: password,
             confirmPassword: ""
         },
         validate: (values) => {
@@ -31,27 +42,22 @@ const Register = () => {
             return errors;
         },
         validationSchema : Yup.object({
-            fullname: Yup.string().required("Required"),
+            first_name: Yup.string().required("Required"),
+            last_name: Yup.string().required("Required"),
             username: Yup.string().required("Required"),
             email: Yup.string().required("Required").email("Not an email"),
-            phone: Yup.number().required("Required")
+            phone_number: Yup.string().required("Required")
         }),
         onSubmit: (values) => {
-            // axios.post("https://bizka.herokuapp.com/accounts/register/", {
-            //     full_name: values.fullname,
-            //     username: values.username,
-            //     email: values.email,
-            //     phone_number: values.phone,
-            //     password: values.password
-            // })
-            // .then(res => {
-            //     console.log(res);
-            // })
-            // .catch(err => {
-            //     console.log(err);
-            // });
-            console.log(values);
-            formik.resetForm({values: ""});
+            setErrorss("");
+            let bizka = {};
+            bizka.first_name = values.first_name;
+            bizka.last_name = values.last_name;
+            bizka.email = values.email;
+            bizka.username = values.username;
+            bizka.phone_number = values.phone_number;
+            bizka.password = values.password;
+            dispatch(registerUser(bizka));
         }
     })
 
@@ -83,17 +89,28 @@ const Register = () => {
                             <img src="/assets/logo.PNG" alt="logo" className="text-center" style={{width: "150px"}} />
                             <h3 className="h3">Create an account</h3>
                         </div>
-                        {/* {!formik.isValid ? <div className="alert alert-danger"> Please fill all the fields</div> : null} */}
+                        {errorss ? <div className="alert alert-danger"> {errorss}</div> : null}
                         <input 
                         type="text"
-                        placeholder="Full Name"
-                        name="fullname"
-                        className={(formik.touched.fullname && formik.errors.fullname) ? "my-2 bizka-form bizka-invalid" : "my-2 bizka-form"}
-                        value={formik.values.fullname}
+                        placeholder="First Name"
+                        name="first_name"
+                        className={(formik.touched.first_name && formik.errors.first_name) ? "my-2 bizka-form bizka-invalid" : "my-2 bizka-form"}
+                        value={formik.values.first_name}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         />
-                        {formik.touched.fullname ? <div className="text-danger" >{formik.errors.fullname}</div> : null}
+                        {formik.touched.first_name ? <div className="text-danger" >{formik.errors.first_name}</div> : null}
+
+                        <input 
+                        type="text"
+                        placeholder="Last Name"
+                        name="last_name"
+                        className={(formik.touched.last_name && formik.errors.last_name) ? "my-2 bizka-form bizka-invalid" : "my-2 bizka-form"}
+                        value={formik.values.last_name}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        />
+                        {formik.touched.last_name ? <div className="text-danger" >{formik.errors.last_name}</div> : null}
 
                         <input 
                         type="text"
@@ -120,13 +137,13 @@ const Register = () => {
                         <input 
                         type="text"
                         placeholder="Phone Number"
-                        name="phone"
-                        className={(formik.touched.phone && formik.errors.phone) ? "my-2 bizka-form bizka-invalid" : "my-2 bizka-form"}
-                        value={formik.values.phone}
+                        name="phone_number"
+                        className={(formik.touched.phone_number && formik.errors.phone_number) ? "my-2 bizka-form bizka-invalid" : "my-2 bizka-form"}
+                        value={formik.values.phone_number}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         />
-                        {formik.touched.phone ? <div className="text-danger" >{formik.errors.phone}</div> : null}
+                        {formik.touched.phone_number ? <div className="text-danger" >{formik.errors.phone_number}</div> : null}
 
                         <input 
                         type={showPwd ? `text` : `password`}
