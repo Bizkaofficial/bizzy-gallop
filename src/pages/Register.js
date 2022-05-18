@@ -1,10 +1,11 @@
 import { useFormik } from "formik";
-import axios from 'axios';
 import * as Yup from "yup";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser } from "../actions";
+import sideImg from "../assets/registerbg.jfif";
+import bizkaLogo from "../assets/logo.PNG";
 
 const Register = () => {
 
@@ -64,7 +65,7 @@ const Register = () => {
     // console.log(formik)
 
     const addStyle = {
-        backgroundImage: `url('/assets/registerbg.jfif')`,
+        backgroundImage: `url(${sideImg})`,
         // backgroundColor: `rgba(70, 100, 190, 0.6)`,
         width: '50vw',
         height: '100vh',
@@ -85,8 +86,8 @@ const Register = () => {
                 </div>
                 <div className="col-6 container mt-sm-4 px-sm-4">
                     <form onSubmit={formik.handleSubmit} className="p-3 mx-5" >
-                        <div className="text-center mt-3">
-                            <img src="/assets/logo.PNG" alt="logo" className="text-center" style={{width: "150px"}} />
+                        <div className="text-center mt-1">
+                            <img src={bizkaLogo} alt="bizka logo" className="text-center" style={{width: "150px"}} />
                             <h3 className="h3">Create an account</h3>
                         </div>
                         {errorss ? <div className="alert alert-danger"> {errorss}</div> : null}

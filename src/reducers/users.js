@@ -22,13 +22,11 @@ const users = (state=initState, action) => {
             //     "phone_number": action.payload.phone_number,
             //     "password": action.payload.password
             // }
-            axios.post('http://bizka.herokuapp.com/accounts/register/', action.payload)
+            axios.post('http://bizka.onrender.com/accounts/register/', action.payload)
             .then(res => {
                 console.log(res)
             })
             .catch(err => {
-                // throw err.message;
-                // console.log(err);
                 return {
                     ...state,
                     error: err.message

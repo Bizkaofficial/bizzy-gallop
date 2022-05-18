@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import bizkaLogo from "../assets/Bizka_bizka_bg.png"
 
 const Navbar = () => {
   return (
@@ -8,9 +9,9 @@ const Navbar = () => {
         <Link to="/" className="navbar-brand h1">
           <img
             className="d-flex align-top"
-            src="/assets/bizka_bizka_bg.png"
+            src={bizkaLogo}
             height={"90rem"}
-            alt="bizkalogo"
+            alt="bizka logo"
           />
         </Link>
         <button
@@ -65,7 +66,7 @@ const Navbar = () => {
             </li>
             <li className="list-inline-item">
               <Link
-              to="/accounts/register"
+                to="/accounts/register"
                 className="btn rounded-pill btn-lg btn-bizka"
               >
                 Register
