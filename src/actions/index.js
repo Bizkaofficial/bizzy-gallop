@@ -12,4 +12,11 @@ const login = (details) => {
     }
 }
 
+const forgotPassword = () => {
+    return {
+        type: "FORGOT_PASSWORD",
+        payload: "email"
+    }
+}
+
 export { registerUser, login }

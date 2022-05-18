@@ -13,13 +13,13 @@ const Register = () => {
 
     const [showPwd, setShowPwd] = useState(false);
     const dispatch = useDispatch();
-    const first_name = useSelector(state=> state.usersReducer.first_name);
-    const last_name = useSelector(state=> state.usersReducer.last_name);
-    const email = useSelector(state=> state.usersReducer.email);
-    const phone_number = useSelector(state=> state.usersReducer.phone_number);
-    const password = useSelector(state=> state.usersReducer.password);
-    const username = useSelector(state=> state.usersReducer.username);
-    const er = useSelector(state=> state.usersReducer.error);
+    const first_name = useSelector(state=> state.accountsReducer.first_name);
+    const last_name = useSelector(state=> state.accountsReducer.last_name);
+    const email = useSelector(state=> state.accountsReducer.email);
+    const phone_number = useSelector(state=> state.accountsReducer.phone_number);
+    const password = useSelector(state=> state.accountsReducer.password);
+    const username = useSelector(state=> state.accountsReducer.username);
+    const er = useSelector(state=> state.accountsReducer.error);
 
     const formik = useFormik({
         initialValues : {
