@@ -1,13 +1,17 @@
 import { useFormik } from "formik";
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 import * as Yup from 'yup';
+import { useDispatch } from "react-redux";
+import { login } from "../actions"
 import '../index.css'
+import sideImg from "../assets/registerbg.jfif";
+import bizkaLogo from "../assets/logo.PNG";
 
 const Login = () => {
 
   const [showPwd, setShowPwd] = useState(false);
+  const dispatch = useDispatch();
 
   const formik = useFormik({
     initialValues: {
@@ -19,12 +23,13 @@ const Login = () => {
     }),
     onSubmit: (values) => {
       console.log(values);
+      dispatch(login(values))
       formik.resetForm({Values: ""});
     }
   });
 
   const addStyle = {
-    backgroundImage: `url('/assets/registerbg.jfif')`,
+    backgroundImage: `url(${sideImg})`,
     // backgroundColor: `rgba(70, 100, 190, 0.6)`,
     width: '50vw',
     height: '100vh',
@@ -45,7 +50,7 @@ const Login = () => {
                 <div className="col-lg-6 col-md-12 col-sm-12 container mt-4 px-4">
                     <form onSubmit={formik.handleSubmit} className="p-3 mx-5" >
                         <div className="text-center mt-3">
-                            <img src="/assets/logo.PNG" alt="logo" className="text-center" style={{width: "150px"}} />
+                            <img src={bizkaLogo} alt="bizka logo" className="text-center" style={{width: "150px"}} />
                             <h3 className="h3">Log in</h3>
                         </div>
 
@@ -76,7 +81,7 @@ const Login = () => {
                         <input type="checkbox" onClick={()=> setShowPwd(!showPwd)} /> Show Password
 
                         <div className="container text-center">
-                          <Link to="/forgot-password" className="text-warning text-decoration-none" >Forgot Password?</Link>
+                          <Link to="/accounts/forgot-password" className="text-warning text-decoration-none" >Forgot Password?</Link>
                         </div>
 
                         <div className="text-center mx-3"><button className="btn btn-bizka w-100 p-3 my-3" type="submit">Log in</button> </div>
