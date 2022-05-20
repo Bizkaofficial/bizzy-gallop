@@ -4,8 +4,8 @@ import flexImg3 from "../assets/About_img_3.jpeg";
 const About = () => {
   return (
     <div className="container-fluid">
-      <div className="d-flex justify-md-content-between border border-success p-4">
-        <div className="col p-4">
+      <div className="d-flex border border-success p-4">
+        <div>
           <h1 className="pb-4">
             We want to help Data <br /> Analysts build their career
           </h1>
@@ -48,7 +48,7 @@ const About = () => {
       </div>
       <div>
         <h1 className="text-center">Leadership Team</h1>
-        <div className="d-flex p-4">
+        <div className="d-flex p-4 align-center">
           <div className="p-2 ">
             <img
               src={flexImg3}
@@ -86,7 +86,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="d-flex p-4">
+        <div className="d-flex p-4 align-center">
           <div className="p-2">
             <img
               src={flexImg3}
