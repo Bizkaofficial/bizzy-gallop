@@ -1,38 +1,45 @@
 import flexImg from "../assets/About_img_1.jpeg";
 import flexImg2 from "../assets/About_img_2.jpeg";
 import flexImg3 from "../assets/About_img_3.jpeg";
+import "../index.css";
 const About = () => {
   return (
-    <div className="container-fluid">
-      <div className="d-flex border border-success p-4">
+    <div className="container-lg about">
+      <div className="d-flex justify-content-around p-4 mt-4">
         <div>
-          <h1 className="pb-4">
+          <h1 className="pb-5">
             We want to help Data <br /> Analysts build their career
           </h1>
-          <p>
+          <p className="body-text">
             We want to help Data Analysts increase their <br /> chances of
             getting hired by making it easier <br /> and faster to share their
             works on a public <br /> platform where anyone could see and <br />{" "}
             understand it at a glance.
           </p>
         </div>
-        <div className="col p-4 ml-auto" width={"50%"}>
+        <div className="p-2">
           <img
             src={flexImg}
-            className="fluid"
-            width={450}
+            className="about-img"
+            width={470}
             height={300}
             alt=""
           />
         </div>
       </div>
-      <div className="row p-4">
-        <div className="col">
-          <img src={flexImg2} width={450} height={300} alt="" />
+      <div className="d-flex justify-content-around align-items-center p-2">
+        <div className="p-4 ">
+          <img
+            src={flexImg2}
+            className=" round "
+            width={500}
+            height={330}
+            alt=""
+          />
         </div>
-        <div className="col">
+        <div className="p-4">
           <h1>Our Story</h1>
-          <p className="font-weight-bold">
+          <p className="body-text">
             Bizka started with a team of 7 persons who <br /> wanted to help
             creatives brand themselves <br /> online. On the search to focus on
             one creative <br />
@@ -41,85 +48,88 @@ const About = () => {
             during their job <br />
             hunt because many could not show a <br /> comprehensive breakdown of
             their works.
-            <br /> The initiative to help Data Analysts solve this <br />{" "}
-            problem was what birthed Bizka.
+            <br />{" "}
+            <span className="down">
+              The initiative to help Data Analysts solve this <br /> problem was
+              what birthed Bizka.
+            </span>
           </p>
         </div>
       </div>
-      <div>
+      <div className="mt-1">
         <h1 className="text-center">Leadership Team</h1>
-        <div className="d-flex p-4 align-center">
+        <div className="flex-class p-4">
           <div className="p-2 ">
             <img
               src={flexImg3}
-              className="rounded border border-primary"
+              className="item"
               width={170}
-              height={140}
+              height={160}
               alt=""
             />
           </div>
           <div className="p-2">
             <img
               src={flexImg3}
-              className="rounded "
+              className="item"
               width={170}
-              height={140}
+              height={160}
               alt=""
             />
           </div>
           <div className="p-2">
             <img
               src={flexImg3}
-              className="rounded "
+              className="item"
               width={170}
-              height={140}
+              height={160}
               alt=""
             />
           </div>
           <div className="p-2">
             <img
               src={flexImg3}
-              className="rounded "
+              className="item"
               width={170}
-              height={140}
+              height={160}
               alt=""
             />
           </div>
         </div>
-        <div className="d-flex p-4 align-center">
-          <div className="p-2">
+        <div className="flex-class p-2">
+          <div className="p-2 item">
             <img
               src={flexImg3}
-              className="rounded "
+              className="item"
               width={170}
-              height={140}
+              height={160}
               alt=""
             />
           </div>
           <div className="p-2">
             <img
               src={flexImg3}
-              className="rounded"
+              className="item"
               width={170}
-              height={140}
+              height={160}
               alt=""
             />
           </div>
           <div className="p-2">
             <img
               src={flexImg3}
-              className="rounded "
+              className="item"
               width={170}
-              height={140}
+              height={160}
               alt=""
             />
           </div>
           <div className="p-2">
             <img
               src={flexImg3}
-              className="rounded "
+              className="item"
               width={170}
-              height={140}
+              height={160}
               alt=""
             />
           </div>
