@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bizkaLogo from "../assets/Bizka_bizka_bg.png"
+import bizkaLogo from "../assets/Bizka_bizka_bg.png";
 
 const Navbar = () => {
   return (
@@ -38,7 +38,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item active">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/about">
                 <strong> About </strong>
               </Link>
             </li>
