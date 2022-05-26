@@ -3,6 +3,7 @@ import { useState } from "react";
 import Accounts from "./components/Accounts";
 import Home from "./pages";
 import About from "./pages/About";
+import UserProfile from "./pages/UserProfile";
 
 const App = () => {
   return (
@@ -15,6 +16,11 @@ const App = () => {
           element={<Accounts />}
         />
         <Route path="/about" caseSensitive="false" element={<About />} />
+        <Route
+          path="/userprofile"
+          caseSensitive="false"
+          element={<UserProfile />}
+        />
       </Routes>
     </>
   );
