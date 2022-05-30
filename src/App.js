@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import { useState } from "react";
-import Accounts from "./components/Accounts";
+import Accounts from "./routes/Accounts";
 import Home from "./pages";
+import User from "./routes/User";
 import About from "./pages/About";
 import UserProfile from "./pages/UserProfile";
 
@@ -15,6 +15,7 @@ const App = () => {
           caseSensitive="false"
           element={<Accounts />}
         />
+        <Route path="/user/*" caseSensitive="false" element={<User />} />
         <Route path="/about" caseSensitive="false" element={<About />} />
         <Route
           path="/userprofile"

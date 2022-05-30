@@ -19,4 +19,4 @@ const forgotPassword = () => {
     }
 }
 
-export { registerUser, login }
+export { registerUser, login, forgotPassword }
