@@ -118,7 +118,7 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   font-weight: bold;
   display: block;
 }
-.r_side {
-  width: 50%;
-  border: 2px solid seagreen;
+.bottom {
+  width: 100%;
+  height: 25vh;
 }
