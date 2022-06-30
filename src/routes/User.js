@@ -7,7 +7,7 @@ const User = () => {
     <div>
       <Routes>
         <Route path="" element={<UserProfile />} />
-        <Route path="social" element={<SocialMedia />} />
+        <Route path="social" caseSensitive="false" element={<SocialMedia />} />
       </Routes>
     </div>
   )

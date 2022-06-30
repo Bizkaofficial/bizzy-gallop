@@ -8,6 +8,7 @@ const initState = {
   phone_number: "+234",
   password: "",
   error: "",
+  response: "",
 };
 
 const accounts = (state = initState, action) => {
@@ -25,7 +26,10 @@ const accounts = (state = initState, action) => {
       axios
         .post("http://bizka.onrender.com/accounts/register/", action.payload)
         .then((res) => {
-          console.log(res);
+          return {
+            ...state,
+            response: res
+          }
         })
         .catch((err) => {
           return {
