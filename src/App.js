@@ -3,6 +3,7 @@ import Accounts from "./routes/Accounts";
 import Home from "./pages";
 import User from "./routes/User";
 import About from "./pages/About";
+import UserProfile from "./pages/UserProfile";
 
 const App = () => {
   return (
@@ -16,6 +17,11 @@ const App = () => {
         />
         <Route path="/user/*" caseSensitive="false" element={<User />} />
         <Route path="/about" caseSensitive="false" element={<About />} />
+        <Route
+          path="/userProfile"
+          caseSensitive="false"
+          element={<UserProfile />}
+        />
       </Routes>
     </>
   );

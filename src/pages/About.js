@@ -96,8 +96,8 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="flex-class p-2">
-          <div className="p-2 item">
+        <div className="flex-class p-4">
+          <div className="p-2">
             <img
               src={flexImg3}
               className="item"

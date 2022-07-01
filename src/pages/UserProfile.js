@@ -1,12 +1,16 @@
 import "../index.css";
-
+import UserProfileImg1 from "../assets/userprofile1.png";
+import UserProfileImg2 from "../assets/userprofile2.png"
+import UserProfileImg3 from "../assets/userprofile3.png"
+import UserProfileImg4 from "../assets/userprofile4.png"
+import UserProfileImg5 from "../assets/userprofile5.png"
 const UserProfile = () => {
   return (
-    <div className="container-lg">
+    <div className="container-fluid">
       <div className="top"></div>
-      <div className="row user_profile">
-        <div className="col aside text-center" height={100}>
-          <img src=" " alt=""></img>
+      <div className="user_profile">
+        <div className=" aside text-center">
+          <img className="userprofileimg1" src={UserProfileImg1} alt=""></img>
           <h4>Name</h4>
           <h4>Headlines</h4>
           <a className="row" href="#" alt="">
@@ -32,7 +36,7 @@ const UserProfile = () => {
             Contact Info
           </a>
         </div>
-        <div className="r_side col">
+        <div className="r_side">
           <div className="article">
             <h1>About ME</h1>
             <p>
@@ -45,21 +49,21 @@ const UserProfile = () => {
             </p>
             <button className="article_btn">Add Project</button>
           </div>
-          <div className="container-fluid p-4">
+          <div className="p-4">
             <h4>My Projects</h4>
             <div className="card-group">
               <div className="card col-4 m-4">
-                <img src="" className="card-img-top" />
+                <img src={UserProfileImg2} alt="" className="card-img-top" />
               </div>
               <div className="card col-6 m-6">
-                <img src="" className="card-img-top" />
+                <img src={UserProfileImg3} className="card-img-top" />
               </div>{" "}
               <br />
               <div className="card col-6 m-6">
-                <img src="" className="card-img-top" />
+                <img src={UserProfileImg4} className="card-img-top" />
               </div>
               <div className="card col-6 m-6">
-                <img src="" className="card-img-top" />
+                <img src={UserProfileImg5} className="card-img-top" />
               </div>
             </div>
           </div>
