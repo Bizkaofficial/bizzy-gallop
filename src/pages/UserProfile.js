@@ -1,9 +1,9 @@
 import "../index.css";
 import UserProfileImg1 from "../assets/userprofile1.png";
-import UserProfileImg2 from "../assets/userprofile2.png"
-import UserProfileImg3 from "../assets/userprofile3.png"
-import UserProfileImg4 from "../assets/userprofile4.png"
-import UserProfileImg5 from "../assets/userprofile5.png"
+import UserProfileImg2 from "../assets/userprofile2.png";
+import UserProfileImg3 from "../assets/userprofile3.png";
+import UserProfileImg4 from "../assets/userprofile4.png";
+import UserProfileImg5 from "../assets/userprofile5.png";
 const UserProfile = () => {
   return (
     <div className="container-fluid">
@@ -51,19 +51,23 @@ const UserProfile = () => {
           </div>
           <div className="p-4">
             <h4>My Projects</h4>
-            <div className="card-group">
-              <div className="card col-4 m-4">
-                <img src={UserProfileImg2} alt="" className="card-img-top" />
+            <div className="card-group p-4 row">
+              <div className=" col-3 m-4">
+                <img className="card-img-top" src={UserProfileImg2} alt="" />
               </div>
-              <div className="card col-6 m-6">
-                <img src={UserProfileImg3} className="card-img-top" />
+              <div className="col-3 m-4">
+                <img className="card-img-top" src={UserProfileImg3} />
               </div>{" "}
               <br />
-              <div className="card col-6 m-6">
-                <img src={UserProfileImg4} className="card-img-top" />
+              <div className="col-3 m-4">
+                <img className="card-img-top" src={UserProfileImg4} />
               </div>
-              <div className="card col-6 m-6">
-                <img src={UserProfileImg5} className="card-img-top" />
+              <div className=" col-3 m-4">
+                <img
+                  className="card-img-top"
+                  src={UserProfileImg5}
+                  width={250}
+                />
               </div>
             </div>
           </div>
