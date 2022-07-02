@@ -4,6 +4,7 @@ import Home from "./pages";
 import User from "./routes/User";
 import About from "./pages/About";
 import UserProfile from "./pages/UserProfile";
+import ProjectUpload from "./pages/ProjectUpload";
 
 const App = () => {
   return (
@@ -20,8 +21,8 @@ const App = () => {
         <Route
           path="/userProfile"
           caseSensitive="false"
-          element={<UserProfile />}
-        />
+          element={<UserProfile />} />
+        <Route  path="/projectupload" caseSensitive="fasle" element={<ProjectUpload />} />
       </Routes>
     </>
   );

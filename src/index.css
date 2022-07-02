@@ -138,3 +138,8 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
 .card-group > img {
   width: 200px;
 }
+
+.projectUpload {
+  font-family: Source, "Sans Pro";
+  color: rgba(0, 0, 0, 0.4);;
+}
