@@ -129,6 +129,7 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   width: 100%;
   height: 25vh;
 }
+/* Project Upload */
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -144,3 +145,5 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   color: rgba(0, 0, 0, 0.4);;
   background-color: #E5E5E5;
 }
+
+/* Blog post */
