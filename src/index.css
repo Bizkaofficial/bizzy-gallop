@@ -63,7 +63,8 @@
 .bizka {
   background-color: #01519c;
 }
-/* About page styles */
+
+/* About page styling */
 .about > h1{
   font-family: "Playfair Display";
 }
@@ -91,6 +92,7 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   display: inline-block;
   padding-top: 20px;
 }
+
 /* Userprofile */
 .user_profile {
   font-family: Source, sans-pro;
@@ -109,11 +111,15 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   align-content: center;
 }
 .aside {
+  /* position: absolute; */
+  width: 608px;
+  height: 1546px;
+  left: 72px;
+  top: 344px;
   background-color: #CBE6FF;
   line-height: 70px;
   border: 2px solid seashell;
   border-radius: 10px;
-  width: 500px;
   margin-right: 100px;
 }
 .aside >  .row {
@@ -125,6 +131,10 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   display: block;
 }
 
+.r_side {
+  width: 50%;
+}
+
 .bottom {
   width: 100%;
   height: 25vh;
@@ -133,11 +143,7 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 140px;
-}
-
-.card-group > img {
-  width: 200px;
+  max-width: 70px;
 }
 
 .projectUpload {

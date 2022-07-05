@@ -52,17 +52,23 @@ const UserProfile = () => {
           <div className="p-4">
             <h4>My Projects</h4>
             <div className="card-group p-4 row">
-              <div className=" col-3 m-4">
-                <img className="card-img-top" src={UserProfileImg2} alt="" />
+              <div className=" col-lg-4 m-4">
+                <img
+                  className="card-img-top"
+                  src={UserProfileImg2}
+                  width={100}
+                  height={170}
+                  alt=""
+                />
               </div>
-              <div className="col-3 m-4">
+              <div className="col-lg-4 m-4">
                 <img className="card-img-top" src={UserProfileImg3} />
               </div>{" "}
               <br />
-              <div className="col-3 m-4">
+              <div className="col-lg-4 m-4">
                 <img className="card-img-top" src={UserProfileImg4} />
               </div>
-              <div className=" col-3 m-4">
+              <div className=" col-lg-4 m-4">
                 <img
                   className="card-img-top"
                   src={UserProfileImg5}
