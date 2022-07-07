@@ -24,14 +24,16 @@ const accounts = (state = initState, action) => {
       //     "password": action.payload.password
       // }
       axios
-        .post("http://bizka.onrender.com/accounts/register/", action.payload)
+        .post("https://bizka.onrender.com/auth/register", action.payload)
         .then((res) => {
+          console.log(res)
           return {
             ...state,
             response: res
           }
         })
         .catch((err) => {
+          console.log(err)
           return {
             ...state,
             error: err.message,
