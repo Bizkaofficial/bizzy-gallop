@@ -34,7 +34,7 @@ const Register = () => {
     },
     validate: (values) => {
       let errors = {};
-      let regexForPassword = /^([a-zA-z]{1,}[0-9]{1,}[!@#$%^&*()_+?><]{1,})$/;
+      let regexForPassword = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
       if (values.password !== values.confirmPassword) {
         errors.confirmPassword = "Must be the same with password";
       }
