@@ -98,7 +98,7 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   font-family: Source, sans-pro;
   width: 1500px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .userprofileimg1 {
   border-radius: 100px;
@@ -111,16 +111,13 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   align-content: center;
 }
 .aside {
-  /* position: absolute; */
   width: 608px;
   height: 1546px;
-  left: 72px;
-  top: 344px;
+  margin-left: 72px;
   background-color: #CBE6FF;
   line-height: 70px;
   border: 2px solid seashell;
   border-radius: 10px;
-  margin-right: 100px;
 }
 .aside >  .row {
   font-family: "Source, Sans Pro";
