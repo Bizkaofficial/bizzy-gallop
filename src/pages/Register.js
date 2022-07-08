@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { registerUser } from "../actions";
 import sideImg from "../assets/registerbg.jfif";
 import bizkaLogo from "../assets/logo.PNG";
+import axios from "axios";
 
 const Register = () => {
   const [errorss, setErrorss] = useState("");
@@ -52,6 +53,11 @@ const Register = () => {
       phone_number: Yup.string().required("Required"),
     }),
     onSubmit: (values) => {
+      // axios.post('https://bizka.onrender.com/auth/register', values).then((res)=>{
+      //   console.log(res)
+      // }).catch((err)=>{
+      //   console.log(err)
+      // })
       setErrorss("");
       try {
         let bizka = {};
@@ -63,7 +69,7 @@ const Register = () => {
         bizka.password = values.password;
         dispatch(registerUser(bizka));
       } catch (err) {
-        console.lo(err);
+        console.log(err);
       }
     },
   });

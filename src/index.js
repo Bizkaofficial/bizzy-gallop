@@ -9,7 +9,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import allReducers from './reducers';
-const store = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+import { applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+// , window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+const store = createStore(allReducers, applyMiddleware(thunk));
 
 ReactDOM.render(
   <React.StrictMode>
