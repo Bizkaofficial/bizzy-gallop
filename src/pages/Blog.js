@@ -11,7 +11,7 @@ import Frame56 from "../assets/Frame56.png";
 import Frame57 from "../assets/Frame57.png";
 import Frame58 from "../assets/Frame58.png";
 import Frame59 from "../assets/Frame59.png";
-
+import Vector from "../assets/Vector.png";
 
 const Blog = () => {
   return (
@@ -79,7 +79,7 @@ const Blog = () => {
               aria-describedby="basic-addon2"
             />
             <span className="input-group-text bg-primary" id="basic-addon2">
-              @
+              <img src={Vector} width={23} height={21}/>
             </span>
           </div>
           <div className="post--text d-flex justify-content-around flex-column bg-primary my-5 lh-lg text-light px-5 py-5">
@@ -87,11 +87,10 @@ const Blog = () => {
               Register for free to receive relevant updates on latest Data
               Analysis
             </p>
-            <p className="fs-4">Create an account to receive our newsletter and promotions.</p>
-            <button
-              type="button"
-              className="btn btn-light text-primary"
-            >
+            <p className="fs-4">
+              Create an account to receive our newsletter and promotions.
+            </p>
+            <button type="button" className="btn btn-light text-primary">
               Subscribe
             </button>
           </div>
@@ -125,7 +124,7 @@ const Blog = () => {
       </div>
       <div className="row mx-3">
         <div className="col">
-          <img src={Frame54} width={573} height={248}/>
+          <img src={Frame54} width={573} height={248} />
           <h5>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -139,7 +138,7 @@ const Blog = () => {
         <div className="col">
           <img src={Frame55} width={573} height={245} />
           <h5>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
@@ -180,7 +179,7 @@ const Blog = () => {
       </div>
       <div className="row mx-3">
         <div className="col">
-          <img src={Frame58} width={573} height={248}/>
+          <img src={Frame58} width={573} height={248} />
           <h5>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -194,7 +193,7 @@ const Blog = () => {
         <div className="col">
           <img src={Frame59} width={573} height={245} />
           <h5>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
