@@ -3,12 +3,13 @@ import * as Yup from "yup";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import axios from "axios";
 import sideImg from "../assets/registerbg.jfif";
 import bizkaLogo from "../assets/logo.PNG";
+import { registerUser } from "../actions"
 
 const Register = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [errorss, setErrorss] = useState("");
   const [showPwd, setShowPwd] = useState(false);
 
@@ -24,7 +25,7 @@ const Register = () => {
     },
     validate: (values) => {
       let errors = {};
-      let regexForPassword = /^([a-zA-z]{1,}[0-9]{1,}[!@#$%^&*()_+?><]{1,})$/;
+      let regexForPassword = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
       if (values.password !== values.confirmPassword) {
         errors.confirmPassword = "Must be the same with password";
       }
@@ -42,27 +43,24 @@ const Register = () => {
       phone_number: Yup.string().required("Required"),
     }),
     onSubmit: (values) => {
+      // axios.post('https://bizka.onrender.com/auth/register', values).then((res)=>{
+      //   console.log(res)
+      // }).catch((err)=>{
+      //   console.log(err)
+      // })
       setErrorss("");
-      let bizka = {};
-      bizka.first_name = values.first_name;
-      bizka.last_name = values.last_name;
-      bizka.email = values.email;
-      bizka.username = values.username;
-      bizka.phone_number = values.phone_number;
-      bizka.password = values.password;
-      console.log(bizka)
-      axios
-        .post("https://bizka.onrender.com/accounts/register/", bizka)
-        .then((res) => {
-          if (res.status === 201) {
-            navigate("/login");
-          } else {
-            setErrorss("Email or username already exist, please a different email or username");
-          }
-        })
-        .catch((err) => {
-          setErrorss(err.message);
-        });
+      try {
+        let bizka = {};
+        bizka.first_name = values.first_name;
+        bizka.last_name = values.last_name;
+        bizka.email = values.email;
+        bizka.username = values.username;
+        bizka.phone_number = values.phone_number;
+        bizka.password = values.password;
+        dispatch(registerUser(bizka));
+      } catch (err) {
+        console.log(err);
+      }
     },
   });
 
