@@ -7,6 +7,7 @@ import UserProfile from "./pages/UserProfile";
 import ProjectUpload from "./pages/ProjectUpload";
 import Blog  from "./pages/Blog";
 import ProjectDetails from "./pages/ProjectDetails";
+import AboutUS from "./pages/AboutUs";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route  path="/projectupload" caseSensitive="fasle" element={<ProjectUpload />} />
         <Route path="/blog" caseSensitive="false" element={<Blog />} />
         <Route path="/projectdetails" caseSensitive="fasle" element={<ProjectDetails />} />
+        < Route path="/aboutus" caseSensitive="false" element={<AboutUS />} />
       </Routes>
     </>
   );

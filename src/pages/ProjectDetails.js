@@ -86,10 +86,16 @@ const ProjectDetails = () => {
         nunc, auctor auctor. Sed dui id facilisi id urna, et nibh. Neque id
         viverra massa vitae. Nisl tincidunt orci aliquet diam tellus.
       </p>
-      <div className="d-flex  container-fluid-lg">
-        <img src={image9} width={365} height={286} />
-        <img src={image6} width={365} height={286} />
-        <img src={image5} width={365} height={286} />
+      <div className="container-fluid-lg d-flex justify-content-around">
+        <div className="col">
+          <img src={image9} width={365} height={286} />
+        </div>
+        <div className="col">
+          <img src={image6} width={365} height={286} />
+        </div>
+        <div className="col">
+          <img src={image5} width={365} height={286} />
+        </div>
       </div>
       <div className="d-grid d-md-flex my-4">
         <button type="button" className="btn btn-primary me-md-4 px-4">
