@@ -11,32 +11,41 @@ const UserProfile = () => {
       <div className="top"></div>
       <div className="user_profile row">
         <div className="col-md-4 aside text-center">
-          <img className="userprofileimg1" src={UserProfileImg1} alt="" />
-          <h4>Name</h4>
-          <h4>Headlines</h4>
-          <a href="#" alt="">
-            Personal Details
-          </a> <br />
-          <a href="#" alt="">
-            Professional Summary
-          </a> <br />
-          <a href="#" alt="">
-            Service Tools
-          </a> <br />
-          <a href="#" alt="">
-            Work Experience
-          </a> <br />
-          <a href="#" alt="">
-            Education
-          </a> <br />
-          <a href="#" alt="">
-            Course Certificate
-          </a> <br />
-          <a href="#" alt="">
-            Contact Info
-          </a> <br />
+          <img className="userprofileimg1 mt-5" src={UserProfileImg1} alt="" />
+          <h4 className="opacity-50">Name</h4>
+          <h4 className="opacity-50">Headlines</h4>
+          <div className="fs-5 fw-4 ">
+            <a className="link-dark text-decoration-none" href="#" alt="">
+              Personal Details
+            </a>
+            <br />
+            <a className="link-dark text-decoration-none" href="#" alt="">
+              Professional Summary
+            </a>
+            <br />
+            <a className="link-dark text-decoration-none" href="#" alt="">
+              Service Tools
+            </a>
+            <br />
+            <a className="link-dark text-decoration-none" href="#" alt="">
+              Work Experience
+            </a>
+            <br />
+            <a className="link-dark text-decoration-none" href="#" alt="">
+              Education
+            </a>
+            <br />
+            <a className="link-dark text-decoration-none" href="#" alt="">
+              Course Certificate
+            </a>
+            <br />
+            <a className="link-dark text-decoration-none" href="#" alt="">
+              Contact Info
+            </a>
+            <br />
+          </div>
         </div>
-        <div className="col-md-5 offset-md-1 r_side">
+        <div className="col-md-4 offset-md-1 r_side">
           <div className="article">
             <h1>About ME</h1>
             <p>
@@ -47,32 +56,61 @@ const UserProfile = () => {
               <br /> vel, ut. Id volutpat, aliquet convallis elementum ornare
               <br /> turpis. Eu maecenas cras euismod nisi, dictum. Pretium.
             </p>
-            <button className="float-end">Add Project</button>
+            <button className="btn btn-outline-dark rounded">Add Project</button>
+            <img src="" alt="" width={37} heigth={37}/>
           </div>
           <div className="project-banner">
             <h4 className="mt-5">My Projects</h4>
             <div className="card-deck row">
-              <div className="card col-lg-5 mx-3 my-3">
-                <img className="card-img-top" src={UserProfileImg2} alt="Card image cap" />
+              <div className="col-lg-5 my-3">
+                <div className="card">
+                  <img
+                    className="card-img-top"
+                    src={UserProfileImg2}
+                    alt="Card image cap"
+                  />
+                </div>
               </div>
-              <div className="card col-md-5 mt-3 mb-3">
-                <img className="card-img-top" src={UserProfileImg3} alt="Card image cap" />
+              <div className="col-lg-5 mt-3 mb-3">
+                <div className="card">
+                  <img
+                    className="card-img-top"
+                    src={UserProfileImg3}
+                    alt="Card image cap"
+                  />
+                </div>
               </div>
-              <div className="card col-lg-5 mx-3 my-3">
-                <img className="card-img-top" src={UserProfileImg4} alt="Card image cap" />
+              <div className="col-lg-5 my-3">
+                <div className="card">
+                  <img
+                    className="card-img-top"
+                    src={UserProfileImg4}
+                    alt="Card image cap"
+                  />
+                </div>
               </div>
-              <div className="card border col-lg-5 my-3">
-                <img className="card-img-top" src={UserProfileImg5} alt="Card image cap" />
+              <div className="col-lg-5 my-3">
+                <div className="card">
+                  <img
+                    className="card-img-top"
+                    src={UserProfileImg5}
+                    alt="Card image cap"
+                  />
+                </div>
               </div>
-              <div className="card col-lg-5 my-3 bg-success">
+              <div className="col-lg-5 my-3 bg-success">
+                <div className="card" width={326} heigth={285}></div>
               </div>
             </div>
           </div>
-          </div>
-      <div className="background-primary bottom"></div>
-    </div>
-    <div className="project--footer bg-primary" width={1430} heigth={446}>
-    </div>
+        </div>
+        <div className="background-primary bottom"></div>
+      </div>
+      <div
+        className="project--footer bg-primary"
+        width={1430}
+        heigth={446}
+      ></div>
     </div>
   );
 };

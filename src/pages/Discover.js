@@ -24,143 +24,148 @@ const Discover = () => {
       </h3>
       <div className="row row-cols-1 row-cols-md-3 g-4">
         <div className="col">
-        <div className="card text-white">
-          <img
-            className="card-img"
-            src={Unsplash_A}
-            width={424}
-            height={464}
-            alt="Card image"
-          />
-          <div className="card-img-overlay ">
-            <h5 className="card-text ">Arivest Data Analysis for 2010</h5>
-            <p className="card-text">Francis Aderogbin</p>
+          <div className="card text-white">
+            <img
+              className="card-img"
+              src={Unsplash_A}
+              width={424}
+              height={464}
+              alt="Card image"
+            />
+
+            <div className="card-img-overlay">
+              <div className="margin-top">
+                <h5 className="card-text ">Arivest Data Analysis for 2010</h5>
+                <p className="card-text">Francis Aderogbin</p>
+              </div>
+            </div>
           </div>
-        </div>
         </div>
         <div className="col">
-        <div className="card text-white">
-          <img
-            className="card-img"
-            src={Unsplash_A}
-            width={424}
-            height={464}
-            alt="Card image"
-          />
-          <div className="card-img-overlay">
-            <h5 className="card-text">Arivest Data Analysis for 2010</h5>
-            <p className="card-text">Francis Aderogbin</p>
+          <div className="card text-white">
+            <img
+              className="card-img"
+              src={Unsplash_A}
+              width={424}
+              height={464}
+              alt="Card image"
+            />
+            <div className="card-img-overlay">
+              <div className="margin-top">
+              <h5 className="card-text">Arivest Data Analysis for 2010</h5>
+              <p className="card-text">Francis Aderogbin</p>
+              </div> 
+            </div>
           </div>
-        </div>
         </div>
         <div className="col">
-        <div className="card text-white">
-          <img
-            className="card-img"
-            src={Unsplash_A}
-            width={424}
-            height={464}
-            alt="Card image"
-          />
-          <div className="card-img-overlay">
-            <h5 className="card-text">Arivest Data Analysis for 2010</h5>
-            <p className="card-text">Francis Aderogbin</p>
+          <div className="card text-white">
+            <img
+              className="card-img"
+              src={Unsplash_A}
+              width={424}
+              height={464}
+              alt="Card image"
+            />
+            <div className="card-img-overlay margin-top">
+              <h5 className="card-text">Arivest Data Analysis for 2010</h5>
+              <p className="card-text">Francis Aderogbin</p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
-      <div className="row g-4 my-1">
-      <div className="col">
-        <div className="card text-white">
-          <img
-            className="card-img"
-            src={Unsplash_A}
-            width={424}
-            height={464}
-            alt="Card image"
-          />
-          <div className="card-img-overlay">
-            <h5 className="card-text">Arivest Data Analysis for 2010</h5>
-            <p className="card-text">Francis Aderogbin</p>
+      <div className="row row-cols-1 row-cols-md-3 g-4 my-1">
+        <div className="col">
+          <div className="card text-white">
+            <img
+              className="card-img"
+              src={Unsplash_A}
+              width={424}
+              height={464}
+              alt="Card image"
+            />
+            <div className="card-img-overlay margin-top">
+              <h5 className="card-text">Arivest Data Analysis for 2010</h5>
+              <p className="card-text">Francis Aderogbin</p>
+            </div>
           </div>
-        </div>
         </div>
         <div className="col">
-        <div className="card text-white">
-          <img
-            className="card-img"
-            src={Unsplash_A}
-            width={424}
-            height={464}
-            alt="Card image"
-          />
-          <div className="card-img-overlay">
-            <h5 className="card-text">Arivest Data Analysis for 2010</h5>
-            <p className="card-text">Francis Aderogbin</p>
+          <div className="card text-white">
+            <img
+              className="card-img"
+              src={Unsplash_A}
+              width={424}
+              height={464}
+              alt="Card image"
+            />
+            <div className="card-img-overlay margin-top">
+              <h5 className="card-text">Arivest Data Analysis for 2010</h5>
+              <p className="card-text">Francis Aderogbin</p>
+            </div>
           </div>
-        </div>
         </div>
         <div className="col">
-        <div className="card text-white">
-          <img
-            className="card-img"
-            src={Unsplash_A}
-            width={424}
-            height={464}
-            alt="Card image"
-          />
-          <div className="card-img-overlay">
-            <h5 className="card-text">Arivest Data Analysis for 2010</h5>
-            <p className="card-text">Francis Aderogbin</p>
+          <div className="card text-white">
+            <img
+              className="card-img"
+              src={Unsplash_A}
+              width={424}
+              height={464}
+              alt="Card image"
+            />
+            <div className="card-img-overlay margin-top">
+              <h5 className="card-text">Arivest Data Analysis for 2010</h5>
+              <p className="card-text">Francis Aderogbin</p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
-      <div className="row g-4 my-1">
-      <div className="col">
-        <div className="card text-white">
-          <img
-            className="card-img"
-            src={Unsplash_A}
-            width={424}
-            height={464}
-            alt="Card image"
-          />
-          <div className="card-img-overlay">
-            <h5 className="card-text">Arivest Data Analysis for 2010</h5>
-            <p className="card-text">Francis Aderogbin</p>
+      <div className="row row-cols-1 row-cols-md-3 g-4 my-1">
+        <div className="col">
+          <div className="card text-white">
+            <img
+              className="card-img"
+              src={Unsplash_A}
+              width={424}
+              height={464}
+              alt="Card image"
+            />
+            <div className="card-img-overlay margin-top">
+              <h5 className="card-text">Arivest Data Analysis for 2010</h5>
+              <p className="card-text">Francis Aderogbin</p>
+            </div>
           </div>
-        </div>
         </div>
         <div className="col">
-        <div className="card text-white">
-          <img
-            className="card-img"
-            src={Unsplash_A}
-            width={424}
-            height={464}
-            alt="Card image"
-          />
-          <div className="card-img-overlay">
-            <h5 className="card-text">Arivest Data Analysis for 2010</h5>
-            <p className="card-text">Francis Aderogbin</p>
+          <div className="card text-white">
+            <img
+              className="card-img"
+              src={Unsplash_A}
+              width={424}
+              height={464}
+              alt="Card image"
+            />
+            <div className="card-img-overlay margin-top">
+              <h5 className="card-text">Arivest Data Analysis for 2010</h5>
+              <p className="card-text">Francis Aderogbin</p>
+            </div>
           </div>
-        </div>
         </div>
         <div className="col">
-        <div className="card text-white">
-          <img
-            className="card-img"
-            src={Unsplash_A}
-            width={424}
-            height={464}
-            alt="Card image"
-          />
-          <div className="card-img-overlay">
-            <h5 className="card-text">Arivest Data Analysis for 2010</h5>
-            <p className="card-text">Francis Aderogbin</p>
+          <div className="card text-white">
+            <img
+              className="card-img"
+              src={Unsplash_A}
+              width={424}
+              height={464}
+              alt="Card image"
+            />
+            <div className="card-img-overlay margin-top">
+              <h5 className="card-text">Arivest Data Analysis for 2010</h5>
+              <p className="card-text">Francis Aderogbin</p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </div>

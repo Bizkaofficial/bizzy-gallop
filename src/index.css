@@ -88,6 +88,7 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   display: flex;
   justify-content: center;
 }
+
 .down {
   display: inline-block;
   padding-top: 20px;
@@ -100,9 +101,8 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
 
 .top{
   background-color: #83C3FF;
-  width: 1430px;
+  max-width: 1330px;
   height: 20vh;
-  align-content: center;
 }
 .aside {
   width: 608px;
@@ -158,4 +158,9 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
 .post--text {
   width: 520px; 
   height: 765px;
+}
+
+/* Discover Page */
+.margin-top {
+  margin-top: 370px;
 }
