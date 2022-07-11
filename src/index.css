@@ -63,6 +63,17 @@
 .bizka {
   background-color: #01519c;
 }
+/* Discover Page Styling */
+@media (min-width: 768px){
+  .bizka-discover {
+    position: relative;
+  }
+  .bizka-bottom-align-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
 
 /* About page styling */
 .about > h1{
