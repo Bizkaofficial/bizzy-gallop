@@ -1,36 +1,26 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { registerUser } from "../actions";
 import sideImg from "../assets/registerbg.jfif";
 import bizkaLogo from "../assets/logo.PNG";
-import axios from "axios";
+import { registerUser } from "../actions"
 
 const Register = () => {
-  const [errorss, setErrorss] = useState("");
-
-  const [showPwd, setShowPwd] = useState(false);
+  const navigate = useNavigate();
   const dispatch = useDispatch();
-  const first_name = useSelector((state) => state.accountsReducer.first_name);
-  const last_name = useSelector((state) => state.accountsReducer.last_name);
-  const email = useSelector((state) => state.accountsReducer.email);
-  const phone_number = useSelector(
-    (state) => state.accountsReducer.phone_number
-  );
-  const password = useSelector((state) => state.accountsReducer.password);
-  const username = useSelector((state) => state.accountsReducer.username);
-  const er = useSelector((state) => state.accountsReducer.error);
+  const [errorss, setErrorss] = useState("");
+  const [showPwd, setShowPwd] = useState(false);
 
   const formik = useFormik({
     initialValues: {
-      first_name: first_name,
-      last_name: last_name,
-      username: username,
-      email: email,
-      phone_number: phone_number,
-      password: password,
+      first_name: "",
+      last_name: "",
+      username: "",
+      email: "",
+      phone_number: "+234",
+      password: "",
       confirmPassword: "",
     },
     validate: (values) => {
@@ -73,8 +63,6 @@ const Register = () => {
       }
     },
   });
-
-  // console.log(formik)
 
   const addStyle = {
     backgroundImage: `url(${sideImg})`,

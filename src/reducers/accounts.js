@@ -47,17 +47,7 @@ const accounts = (state = initState, action) => {
       //   ...state,
       // };
     case "FORGOT_PASSWORD":
-      axios
-        .post(
-          "http://bizka.onrender.com/accounts/request-reset-email/",
-          action.payload
-        )
-        .then((res) => {
-          console.log(res);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      
       return {
         ...state,
       };
