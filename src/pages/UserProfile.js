@@ -10,8 +10,16 @@ import Group from "../assets/Group.png";
 const UserProfile = () => {
   return (
     <div className="container-fluid">
-      <div className="top"></div>
-      <div className="user_profile row">
+      <section className="container-fluid bg-bizka h-50">
+      <div className="text-center container p-5">
+          <p className="text-white h3">What is Bizka?</p>
+          <p className="text-white mb-4">
+            Bizka is a platform specifically made for data analysts to share
+            their works to the public without using any forom of code.
+          </p>
+        </div>
+      </section>
+      <section className="user_profile row">
         <div className="col-md-4 aside text-center">
           <img className="userprofileimg1 mt-5" src={UserProfileImg1} alt="" />
           <h4 className="opacity-50">Name</h4>
@@ -61,9 +69,9 @@ const UserProfile = () => {
           </div>
         </div>
         <div className="col-md-4 offset-md-1 r_side">
-          <div className="article">
+          <div className="mb-5">
             <h1>About ME</h1>
-            <p>
+            <p className="mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
               Aliquet viverra etiam diam interdum suscipit velit integer. <br />
               Imperdiet leo nunc nulla volutpat phasellus. Nunc <br />
@@ -78,8 +86,8 @@ const UserProfile = () => {
           </div>
           <div className="project-banner">
             <h4 className="mt-5">My Projects</h4>
-            <div className="card-deck row">
-              <div className="col-lg-5 my-3">
+            <div className="row row-cols-1 row-cols-md-2 my-5 g-4">
+              <div className="col my-3">
                 <div className="card">
                   <img
                     className="card-img-top"
@@ -88,7 +96,7 @@ const UserProfile = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-5 mt-3">
+              <div className="col my-3">
                 <div className="card">
                   <img
                     className="card-img-top"
@@ -97,7 +105,7 @@ const UserProfile = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-5 my-3">
+              <div className="col my-3">
                 <div className="card">
                   <img
                     className="card-img-top"
@@ -106,7 +114,7 @@ const UserProfile = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-5 my-3">
+              <div className="col my-3">
                 <div className="card">
                   <img
                     className="card-img-top"
@@ -115,7 +123,7 @@ const UserProfile = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-5 my-3">
+              <div className="col my-3">
                 <div className="card py-3 border-5">
                   <div className="card-text text-center">
                     <img src={Group} alt="" width={50} height={50} />
@@ -127,7 +135,7 @@ const UserProfile = () => {
           </div>
         </div>
         <div className="background-primary bottom"></div>
-      </div>
+      </section>
       <div
         className="project--footer bg-primary"
         width={1430}
