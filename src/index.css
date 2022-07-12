@@ -65,15 +65,7 @@
 }
 
 /* About page styling */
-.about > h1{
-  font-family: "Playfair Display";
-}
-.body-text {
-  font-family: 'Source Sans Pro';
-  font-style:normal;
-  font-size: 26px;
-  line-height: 33px;
-}
+
 .item {
  border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 15px;
@@ -82,16 +74,6 @@
 .round {
   border-radius: 30px;
 Offset: 1px, 5px rgba(0, 0, 0, 1.25);
-}
-.flex-class {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-
-.down {
-  display: inline-block;
-  padding-top: 20px;
 }
   
 /* Userprofile */
@@ -106,14 +88,13 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
 }
 .aside {
   width: 608px;
-  height: 950px;
+  height: 860px;
   margin-left: 72px;
   background-color: #CBE6FF;
   line-height: 70px;
   border: 2px solid seashell;
   border-radius: 10px;
 }
-
 
 .r_side {
   width: 50%;

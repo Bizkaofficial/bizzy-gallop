@@ -4,6 +4,8 @@ import UserProfileImg2 from "../assets/userprofile2.png";
 import UserProfileImg3 from "../assets/userprofile3.png";
 import UserProfileImg4 from "../assets/userprofile4.png";
 import UserProfileImg5 from "../assets/userprofile5.png";
+import carbon_copy from "../assets/carbon_copy-link.png";
+import Group from "../assets/Group.png";
 
 const UserProfile = () => {
   return (
@@ -15,34 +17,47 @@ const UserProfile = () => {
           <h4 className="opacity-50">Name</h4>
           <h4 className="opacity-50">Headlines</h4>
           <div className="fs-5 fw-4 ">
-            <a className="link-dark text-decoration-none" href="#" alt="">
+            <a
+              className="link-dark list-group text-decoration-none"
+              href="#"
+              alt=""
+            >
               Personal Details
             </a>
-            <br />
-            <a className="link-dark text-decoration-none" href="#" alt="">
+            <a
+              className="link-dark list-group text-decoration-none"
+              href="#"
+              alt=""
+            >
               Professional Summary
             </a>
-            <br />
-            <a className="link-dark text-decoration-none" href="#" alt="">
+            <a
+              className="link-dark list-group text-decoration-none"
+              href="#"
+              alt=""
+            >
               Service Tools
             </a>
-            <br />
             <a className="link-dark text-decoration-none" href="#" alt="">
               Work Experience
             </a>
-            <br />
-            <a className="link-dark text-decoration-none" href="#" alt="">
+            <a
+              className="link-dark list-group text-decoration-none"
+              href="#"
+              alt=""
+            >
               Education
             </a>
-            <br />
-            <a className="link-dark text-decoration-none" href="#" alt="">
+            <a
+              className="link-dark list-group text-decoration-none"
+              href="#"
+              alt=""
+            >
               Course Certificate
             </a>
-            <br />
             <a className="link-dark text-decoration-none" href="#" alt="">
               Contact Info
             </a>
-            <br />
           </div>
         </div>
         <div className="col-md-4 offset-md-1 r_side">
@@ -56,8 +71,10 @@ const UserProfile = () => {
               <br /> vel, ut. Id volutpat, aliquet convallis elementum ornare
               <br /> turpis. Eu maecenas cras euismod nisi, dictum. Pretium.
             </p>
-            <button className="btn btn-outline-dark rounded">Add Project</button>
-            <img src="" alt="" width={37} heigth={37}/>
+            <div className="float-end">
+              <button className="btn btn-outline-dark">Add Project</button>
+              <img src={carbon_copy} alt="" width={37} heigth={37} />
+            </div>
           </div>
           <div className="project-banner">
             <h4 className="mt-5">My Projects</h4>
@@ -71,7 +88,7 @@ const UserProfile = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-5 mt-3 mb-3">
+              <div className="col-lg-5 mt-3">
                 <div className="card">
                   <img
                     className="card-img-top"
@@ -98,8 +115,13 @@ const UserProfile = () => {
                   />
                 </div>
               </div>
-              <div className="col-lg-5 my-3 bg-success">
-                <div className="card" width={326} heigth={285}></div>
+              <div className="col-lg-5 my-3">
+                <div className="card py-3 border-5">
+                  <div className="card-text text-center">
+                    <img src={Group} alt="" width={50} height={50} />
+                    <p className="small text-primary">Add New Project</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
