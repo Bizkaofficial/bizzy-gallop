@@ -64,15 +64,13 @@
   background-color: #01519c;
 }
 /* Discover Page Styling */
-@media (min-width: 768px){
-  .bizka-discover {
-    position: relative;
-  }
-  .bizka-bottom-align-text{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
+.bizka-discover{
+  display: flex;
+  height: 100%;
+}
+.bizka-bottom-align-text{
+  display: inline-block;
+  align-self: flex-end;
 }
 
 /* About page styling */
