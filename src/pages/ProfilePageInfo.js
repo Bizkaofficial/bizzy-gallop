@@ -4,10 +4,10 @@ const ProfilePageInfo = () => {
       <h3 >Online Presence</h3>
       <div className="row row-cols-4 my-5">
         <div className="col">
-        <ul class="d-grid gap-5 col-2 text-center">
+        <ul class="d-grid gap-5 fs-5 col-2 text-center">
           <li className="list-group">Linked in</li>
           <li className="list-group">Twitter</li>
-          <li className="list-group">Facebbok</li>
+          <li className="list-group">Facebook</li>
           <li className="list-group">Youtube</li>
           <li className="list-group">Pinterest</li>
           <li className="list-group">Instagram</li>
