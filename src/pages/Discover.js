@@ -1,3 +1,5 @@
+import Footer from "../layouts/Footer";
+import Navbar from "../layouts/Navbar";
 import Unsplash_A from "../assets/unsplash_A.png";
 const Discover = () => {
   return (
@@ -32,7 +34,6 @@ const Discover = () => {
               height={464}
               alt="Card image"
             />
-
             <div className="card-img-overlay">
               <div className="margin-top">
                 <h5 className="card-text ">Arivest Data Analysis for 2010</h5>

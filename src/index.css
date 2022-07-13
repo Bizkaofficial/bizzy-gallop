@@ -63,6 +63,15 @@
 .bizka {
   background-color: #01519c;
 }
+/* Discover Page Styling */
+.bizka-discover{
+  display: flex;
+  height: 100%;
+}
+.bizka-bottom-align-text{
+  display: inline-block;
+  align-self: flex-end;
+}
 
 /* About page styling */
 
