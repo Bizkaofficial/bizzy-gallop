@@ -8,8 +8,8 @@ const ProfilePageWorkExp = () => {
         <div className="col">
           <p className="text-warning">Work Experience</p>
         </div>
-        <div className="col bg-light shadow-50 rounded-start rounded-end">
-          <form className="my-4">
+        <div className="col bg-light border rounded-start rounded-end">
+          <form className="my-5 mx-3">
             <input
               type="text"
               className="form-control text-input mb-3"
@@ -51,6 +51,16 @@ const ProfilePageWorkExp = () => {
               <label class="form-check-label" for="flexCheckDefault">
                 Currently working here
               </label>
+            </div>
+            <div className="mt-5">
+              <h3>Details</h3>
+              <p className="">
+                Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit.
+                Quis porttitor non viverra sed <br /> porttitor nulla nunc cras
+                eget.
+              </p>
+              <button type="button" className="btn btn-primary">Add</button>
+              <button type="button" className="offset-sm-3 btn btn-primary">Cancel</button>
             </div>
           </form>
         </div>

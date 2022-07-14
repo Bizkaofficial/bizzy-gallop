@@ -9,7 +9,6 @@ import Blog from "./pages/Blog";
 import Discover from "./pages/Discover";
 import ProjectDetails from "./pages/ProjectDetails";
 import AboutUS from "./pages/AboutUs";
-import Discover from "./pages/Discover";
 import ProfilePageInfo from "./pages/ProfilePageInfo";
 import ProfilePageWorkExp from "./pages/ProfilePageWorkExp";
 import ProfilePageCourse from "./pages/ProfilePageCourse";

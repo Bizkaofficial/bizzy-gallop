@@ -9,10 +9,10 @@ const profilePageCourse = () => {
           <p className="text-warning">Courses &amp; Certificates</p>
         </div>
         <div className="col bg-light border rounded-start rounded-end">
-          <form className="my-4">
+          <form className="my-5 mx-3">
             <input
               type="text"
-              className="form-control text-input mb-3"
+              className="form-control text-input mb-3 border border-light"
               placeholder="Name of Certificates"
             />
             <input
@@ -28,11 +28,13 @@ const profilePageCourse = () => {
                 id="flexCheckDefault"
               />
               <label class="form-check-label" for="flexCheckDefault">
-                This certifcate doesnt expire
+                This certificate doesnt expire
               </label>
             </div>
-            <div id="" class="form-text">Issue Date</div>
-            <div className="row g-3">
+            <div id="" class="form-text mt-2">
+              Issue Date
+            </div>
+            <div className="row row-cols-2 my-1 g-2">
               <div className="col">
                 <input
                   type="text"
@@ -55,6 +57,15 @@ const profilePageCourse = () => {
                 />
               </div>
             </div>
+            <div className="mt-2">
+            <h3>Details</h3>
+            <p className="">
+              Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Quis
+              porttitor non viverra sed <br /> porttitor nulla nunc cras eget.
+            </p>
+            <button type="button" className="btn btn-primary">Add</button>
+              <button type="button" className="offset-sm-3 btn btn-primary">Cancel</button>
+          </div>
           </form>
         </div>
       </div>
