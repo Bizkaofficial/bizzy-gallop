@@ -74,15 +74,7 @@
 }
 
 /* About page styling */
-.about > h1{
-  font-family: "Playfair Display";
-}
-.body-text {
-  font-family: 'Source Sans Pro';
-  font-style:normal;
-  font-size: 26px;
-  line-height: 33px;
-}
+
 .item {
  border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 15px;
@@ -92,15 +84,6 @@
   border-radius: 30px;
 Offset: 1px, 5px rgba(0, 0, 0, 1.25);
 }
-.flex-class {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-.down {
-  display: inline-block;
-  padding-top: 20px;
-}
   
 /* Userprofile */
 .userprofileimg1 {
@@ -109,20 +92,18 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
 
 .top{
   background-color: #83C3FF;
-  width: 1430px;
+  max-width: 1330px;
   height: 20vh;
-  align-content: center;
 }
 .aside {
   width: 608px;
-  height: 950px;
+  height: 860px;
   margin-left: 72px;
   background-color: #CBE6FF;
   line-height: 70px;
   border: 2px solid seashell;
   border-radius: 10px;
 }
-
 
 .r_side {
   width: 50%;
@@ -167,4 +148,9 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
 .post--text {
   width: 520px; 
   height: 765px;
+}
+
+/* Discover Page */
+.margin-top {
+  margin-top: 370px;
 }

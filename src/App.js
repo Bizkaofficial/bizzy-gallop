@@ -4,10 +4,9 @@ import Home from "./pages";
 import User from "./routes/User";
 import About from "./pages/About";
 import UserProfile from "./pages/UserProfile";
-import ProjectUpload from "./pages/ProjectUpload";
 import Blog  from "./pages/Blog";
 import Discover from "./pages/Discover";
-import ProjectDetails from "./pages/ProjectDetails";
+import AboutUS from "./pages/AboutUs";
 
 const App = () => {
   return (
@@ -22,13 +21,10 @@ const App = () => {
         <Route path="/user/*" caseSensitive="false" element={<User />} />
         <Route path="/about" caseSensitive="false" element={<About />} />
         <Route path="/discover" caseSensitive="false" element={<Discover />} />
-        <Route
-          path="/userProfile"
-          caseSensitive="false"
-          element={<UserProfile />} />
-        <Route  path="/projectupload" caseSensitive="false" element={<ProjectUpload />} />
         <Route path="/blog" caseSensitive="false" element={<Blog />} />
-        <Route path="/projectdetails" caseSensitive="false" element={<ProjectDetails />} />
+        < Route path="/aboutus" caseSensitive="false" element={<AboutUS />} />
+        <Route path="/discover" caseSensitive="false" element={<Discover />} />
+        <Route path="*" element={<h1>Page Not Found </h1>} />
       </Routes>
     </>
   );

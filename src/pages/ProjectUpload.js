@@ -23,7 +23,7 @@ const ProjectUpload = () => {
         <textarea class="form-control textarea-input" rows="5" id="comment" name="text"></textarea> <br />
 
         <label className="form-label h5" for="ToolsUsed" >Tools Used</label> <br />
-        <textarea class="form-control txtarea-input" rows="5" id="comment" name="text"></textarea> <br />
+        <textarea class="form-control textarea-input" rows="5" id="comment" name="text"></textarea> <br />
 
         <label className="form-label h5" for="Video" >Add Video Format</label>
         <p>Please kindly ensure the video is not more than 10 mb in size 3gp, <br /> Mp4 supported format.</p>
