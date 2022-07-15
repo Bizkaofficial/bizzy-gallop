@@ -59,8 +59,12 @@ const ProfilePageWorkExp = () => {
                 Quis porttitor non viverra sed <br /> porttitor nulla nunc cras
                 eget.
               </p>
-              <button type="button" className="btn btn-primary">Add</button>
-              <button type="button" className="offset-sm-3 btn btn-primary">Cancel</button>
+              <button type="button" className="btn btn-default">
+                Add
+              </button>
+              <button type="button" className="offset-sm-3 btn btn-default">
+                Cancel
+              </button>
             </div>
           </form>
         </div>
