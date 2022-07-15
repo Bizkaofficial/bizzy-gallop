@@ -1,7 +1,10 @@
 import Aboutus from "../assets/Aboutus.png";
+import Navbar from "../layouts/Navbar";
 
-const AboutUS = () => {
+const Contact = () => {
   return (
+    <>
+    <Navbar />
     <div className="container-fluid my-4">
       <div className="row row-cols-2 row-cols-md-2">
         <div className="col">
@@ -43,7 +46,8 @@ const AboutUS = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
-export default AboutUS;
+export default Contact;
