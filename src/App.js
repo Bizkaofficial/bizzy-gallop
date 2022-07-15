@@ -12,6 +12,7 @@ import ProjectDetails from "./pages/ProjectDetails";
 import AboutUS from "./pages/AboutUs";
 import ProfilePageWorkExp from "./pages/ProfilePageWorkExp";
 import ProfilePageCourse from "./pages/ProfilePageCourse";
+import PersonalInfo from "./pages/PersonalInfo";
 
 const App = () => {
   return (
@@ -62,6 +63,11 @@ const App = () => {
           path="/projectdetails"
           caseSensitive="false"
           element={<ProjectDetails />}
+        />
+        <Route
+          path="/personalinfo"
+          caseSensitive="false"
+          element={<PersonalInfo />}
         />
       </Routes>
     </>

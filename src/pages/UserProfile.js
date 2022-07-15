@@ -24,7 +24,7 @@ const UserProfile = () => {
           <img className="userprofileimg1 mt-5" src={UserProfileImg1} alt="" />
           <h4 className="opacity-50">Name</h4>
           <h4 className="opacity-50">Headlines</h4>
-          <div className="fs-5 fw-4 ">
+          <div className="fs-5 fw-4 lh-lg">
             <a
               className="link-dark list-group text-decoration-none"
               href="#"
@@ -68,18 +68,18 @@ const UserProfile = () => {
             </a>
           </div>
         </div>
-        <div className="col-md-4 offset-md-1 r_side">
+        <div className="col-md-4 offset-md-1">
           <div className="mb-5">
             <h1>About ME</h1>
             <p className="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
-              Aliquet viverra etiam diam interdum suscipit velit integer. <br />
-              Imperdiet leo nunc nulla volutpat phasellus. Nunc <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Aliquet viverra etiam diam interdum suscipit velit integer.
+              Imperdiet leo nunc nulla volutpat phasellus. Nunc
               suspendisse ac facilisi eget quis at porta. Iaculis facilisi et
-              <br /> vel, ut. Id volutpat, aliquet convallis elementum ornare
-              <br /> turpis. Eu maecenas cras euismod nisi, dictum. Pretium.
+              vel, ut. Id volutpat, aliquet convallis elementum ornare
+              turpis. Eu maecenas cras euismod nisi, dictum. Pretium.
             </p>
-            <div className="float-end">
+            <div className="float-end d-flex ">
               <button className="btn btn-outline-dark">Add Project</button>
               <img src={carbon_copy} alt="" width={37} heigth={37} />
             </div>

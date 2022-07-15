@@ -3,36 +3,146 @@ const SocialMedia = () => {
     <>
       <section className="container">
         <h2 className="display-5 m-5">Online Presence</h2>
-        <div className="row my-2 g-4">
-          <div className="col-6 col-sm-12 bg-success d-flex flex-row">
-            <p className="">Linked In</p>
-            <button type="button" className="d-inline-block btn btn-light rounded-pill">
-              add link
-            </button>
-            <p className="align-self-end">Custom URL</p>
+        <div className="row">
+          <div className="col-9">
+            <div className="row">
+              <div className="col-3 mx-5">
+                <p>Linked In</p>
+              </div>
+              <div className="col-6">
+                <button type="button" className="btn btn-light rounded-pill">
+                  add link
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="row my-2 g-4">
-          <div className="col-4 d-flex">
-            <p className="mx-auto">Twitter</p>
-            <button type="button" className="btn btn-light rounded-pill">
-              add link
-            </button>
-            <p className="">Link title</p>
+          <div className="col-3">
+            <p>Custom Link</p>
           </div>
         </div>
         <div className="row">
-          <div className="d-flex flex-row">
-            <p className="my-2 px-5">Facebook</p>
-            <button className="btn btn-light rounded-pill">add link</button>
-            <p className="">Enter URL</p>
+          <div className="col-9">
+            <div className="row">
+              <div className="col-3 mx-5">
+                <p>Twitter</p>
+              </div>
+              <div className="col-6">
+                <button type="button" className="btn btn-light rounded-pill">
+                  add link
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <p>Link Title</p>
           </div>
         </div>
         <div className="row">
-          <div className="d-flex flex-row">
-            <p className="my-2 px-5">Pinterest</p>
-            <button className="btn btn-light rounded-pill">add link</button>
-            <p className=" mt-5">ADD</p>
+          <div className="col-9">
+            <div className="row">
+              <div className="col-3 mx-5">
+                <p>Facebook</p>
+              </div>
+              <div className="col-6">
+                <button type="button" className="btn btn-light rounded-pill">
+                  add link
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <p>Enter URL</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-9">
+            <div className="row">
+              <div className="col-3 mx-5">
+                <p>Youtube</p>
+              </div>
+              <div className="col-6">
+                <button type="button" className="btn btn-light rounded-pill">
+                  add link
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="col-3">
+            <p>ADD</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-9">
+            <div className="row">
+              <div className="col-3 mx-5">
+                <p>Pinterest</p>
+              </div>
+              <div className="col-6">
+                <button type="button" className="btn btn-light rounded-pill">
+                  add link
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-9">
+            <div className="row">
+              <div className="col-3 mx-5">
+                <p>Instagram</p>
+              </div>
+              <div className="col-6">
+                <button type="button" className="btn btn-light rounded-pill">add link</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-9">
+            <div className="row">
+              <div className="col-3 mx-5">
+                <p>Medium</p>
+              </div>
+              <div className="col-6">
+                <button type="button" className="btn btn-light rounded-pill">add link</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-9">
+            <div className="row">
+              <div className="col-3 mx-5">
+                <p>Github</p>
+              </div>
+              <div className="col-6">
+                <button type="button" className="btn btn-light rounded-pill">add link</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-9">
+            <div className="row">
+              <div className="col-3 mx-5">
+                <p>Wordpress</p>
+              </div>
+              <div className="col-6">
+                <button type="button" className="btn btn-light rounded-pill">add link</button> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-9">
+            <div className="row">
+              <div className="col-3 mx-5">
+                <p>Telegram</p>
+              </div>
+              <div className="col-6">
+                <button type="button" className="btn btn-light rounded-pill">add link</button> 
+              </div>
+            </div>
           </div>
         </div>
       </section>
