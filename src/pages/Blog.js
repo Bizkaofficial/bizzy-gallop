@@ -12,12 +12,16 @@ import Frame57 from "../assets/Frame57.png";
 import Frame58 from "../assets/Frame58.png";
 import Frame59 from "../assets/Frame59.png";
 import Vector from "../assets/Vector.png";
+import Footer from "../layouts/Footer";
+import Navbar from "../layouts/Navbar";
 
 const Blog = () => {
   return (
-    <div className="container-fluid ml-2">
+    <>
+    <Navbar />
+    <div className="container ml-2">
       <div className="row mx-3">
-        <div className="col align-self-end">
+        <div className="col-6 align-self-end">
           <h1 className="mb-5">Data is Life</h1>
           <p className="mt-4 lh-lg">
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
@@ -26,19 +30,19 @@ const Blog = () => {
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
         </div>
-        <div className="col">
-          <img src={Frame47} width={575} height={250} />
+        <div className="col-6">
+          <img src={Frame47} className='w-100' height={250} />
           <p className="h5 mx-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </p>
         </div>
       </div>
       <div className="row">
-        <div className="col">
-          <img src={Frame48} width={655} height={405} />
+        <div className="col-6">
+          <img src={Frame48} className='w-100' height={405} />
         </div>
-        <div className="col align-self-end">
-          <img src={Frame49} width={575} height={250} />
+        <div className="col-6 align-self-end">
+          <img src={Frame49} className='w-100' height={250} />
           <p className="h5 mx-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </p>
@@ -46,9 +50,9 @@ const Blog = () => {
       </div>
       <h4 className="mx-3">Latest Posts</h4>
       <hr />
-      <div className="row mt-5 justify-content-between">
-        <div className="col mt-5 mx-3">
-          <img src={Frame50} width={575} height={250} />
+      <div className="row mt-5">
+        <div className="col-6 mt-5 mx-3">
+          <img src={Frame50} className='w-100' height={250} />
           <h4>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h4>
@@ -58,7 +62,7 @@ const Blog = () => {
             pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
-          <img src={Frame51} width={575} height={245} />
+          <img src={Frame51} className='w-100' height={245} />
           <h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h3>
@@ -69,7 +73,7 @@ const Blog = () => {
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
         </div>
-        <div className="col mt-5 mx-3">
+        <div className="col-6 mt-5 mx-3">
           <div className="input-group ">
             <input
               type="text"
@@ -82,7 +86,7 @@ const Blog = () => {
               <img src={Vector} width={23} height={21}/>
             </span>
           </div>
-          <div className="post--text d-flex justify-content-around flex-column bg-primary my-5 lh-lg text-light px-5 py-5">
+          <div className="bg-primary my-5 lh-lg text-light px-5 py-5">
             <p className="fs-2">
               Register for free to receive relevant updates on latest Data
               Analysis
@@ -97,20 +101,20 @@ const Blog = () => {
         </div>
       </div>
       <div className="row mx-3">
-        <div className="col">
-          <img src={Frame52} width={575} height={245} />
-          <h5>
+        <div className="col-6">
+          <img src={Frame52} className='w-100' height={245} />
+          <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
-          <p>
+          <p className='px-4'>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
             pulvinar purus ultricies posuere nisi justo, placerat cum
             pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
         </div>
-        <div className="col">
-          <img src={Frame53} width={573} height={248} />
+        <div className="col-6">
+          <img src={Frame53} className='w-100' height={248} />
           <h5>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -204,7 +208,9 @@ const Blog = () => {
         </div>
       </div>
       <button className="btn btn-primary offset-md-5">Load More</button>
+      <Footer />
     </div>
+    </>
   );
 };
 export default Blog;
