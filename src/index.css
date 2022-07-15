@@ -20,11 +20,20 @@
   color: #01519C !important;
   border-color: #01519C !important;
 }
+.bg-bizka-primary {
+  background-color: #1f3d7a;
+}
 
 .btn-outline-bizka:hover {
   color: #fff !important;
   background-color: #01519C !important;
   border-color: #01519C !important;
+}
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+.font-size-larger {
+  font-size: larger !important;
 }
 
 .bizka-form {

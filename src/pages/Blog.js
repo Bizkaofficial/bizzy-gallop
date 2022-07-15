@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Frame47 from "../assets/Frame47.png";
 import Frame48 from "../assets/Frame48.png";
 import Frame49 from "../assets/Frame49.png";
@@ -19,7 +20,7 @@ const Blog = () => {
   return (
     <>
     <Navbar />
-    <div className="container ml-2">
+    <div className="container">
       <div className="row mx-3">
         <div className="col-6 align-self-end">
           <h1 className="mb-5">Data is Life</h1>
@@ -51,56 +52,65 @@ const Blog = () => {
       <h4 className="mx-3">Latest Posts</h4>
       <hr />
       <div className="row mt-5">
-        <div className="col-6 mt-5 mx-3">
-          <img src={Frame50} className='w-100' height={250} />
-          <h4>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
-            pulvinar purus ultricies posuere nisi justo, placerat cum
-            pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
-            accumsan lobortis penatibus et odio tempus, suscipit
-          </p>
-          <img src={Frame51} className='w-100' height={245} />
-          <h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
-            pulvinar purus ultricies posuere nisi justo, placerat cum
-            pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
-            accumsan lobortis penatibus et odio tempus, suscipit
-          </p>
+        <div className="col-7">
+          <div className='firstCard'>
+            <img alt='' src={Frame50} className='w-100' height={250} />
+            <h4 className='px-4'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
+            </h4>
+            <p className='px-4'>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
+              pulvinar purus ultricies posuere nisi justo, placerat cum
+              pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
+              accumsan lobortis penatibus et odio tempus, suscipit
+            </p>
+          </div>
+          <div className='secondCard'>
+            <img alt='' src={Frame51} className='w-100' height={245} />
+            <h3 className='px-4'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
+            </h3>
+            <p className='px-4'>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
+              pulvinar purus ultricies posuere nisi justo, placerat cum
+              pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
+              accumsan lobortis penatibus et odio tempus, suscipit
+            </p>
+          </div>
         </div>
-        <div className="col-6 mt-5 mx-3">
-          <div className="input-group ">
+        <div className="col-5 p-5">
+          <div className="input-group">
             <input
               type="text"
-              className="form-control-lg border round"
+              className="form-control-lg w-75 border round"
               placeholder="Search bar"
               aria-label="Search bar"
               aria-describedby="basic-addon2"
             />
-            <span className="input-group-text bg-primary" id="basic-addon2">
-              <img src={Vector} width={23} height={21}/>
-            </span>
+            <div className='input-group-append'>
+              <span className="input-group-text bg-primary" id="basic-addon2">
+                <img alt='' src={Vector} width={23} height={32}/>
+              </span>
+            </div>
           </div>
-          <div className="bg-primary my-5 lh-lg text-light px-5 py-5">
-            <p className="fs-2">
+          <div className="bg-bizka-primary my-5 lh-lg text-light px-5 py-5">
+            <p className="pb-5 font-weight-bold fs-5" >
               Register for free to receive relevant updates on latest Data
               Analysis
             </p>
-            <p className="fs-4">
+            <p className="fs-4 pb-5">
               Create an account to receive our newsletter and promotions.
             </p>
-            <button type="button" className="btn btn-light text-primary">
-              Subscribe
-            </button>
+            <div className='d-flex justify-content-center py-4'>
+              <button type="button" className="btn btn-lg btn-light text-primary mb-5 rounded-pill px-4">
+                Register Now
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <div className="row mx-3">
+
+      <div className="row">
         <div className="col-6">
           <img src={Frame52} className='w-100' height={245} />
           <h5 className='px-4'>
@@ -115,10 +125,10 @@ const Blog = () => {
         </div>
         <div className="col-6">
           <img src={Frame53} className='w-100' height={248} />
-          <h5>
+          <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
-          <p>
+          <p className='px-4'>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
             pulvinar purus ultricies posuere nisi justo, placerat cum
             pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
@@ -126,25 +136,26 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div className="row mx-3">
-        <div className="col">
+
+      <div className="row pb-5">
+        <div className="col-6">
           <img src={Frame54} width={573} height={248} />
-          <h5>
+          <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
-          <p>
+          <p className='px-4'>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
             pulvinar purus ultricies posuere nisi justo, placerat cum
             pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
         </div>
-        <div className="col">
+        <div className="col-6">
           <img src={Frame55} width={573} height={245} />
-          <h5>
+          <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
-          <p>
+          <p className='px-4'>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
             pulvinar purus ultricies posuere nisi justo, placerat cum
             pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
@@ -152,28 +163,28 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <h4 className="mt-5 mx-3">Read More Helpful Hints</h4>
+      <h4 className="pt-5 mt-5 mx-3">Read More Helpful Hints</h4>
       <hr />
 
-      <div className="row mx-3">
-        <div className="col">
+      <div className="row">
+        <div className="col-6">
           <img src={Frame56} width={575} height={245} />
-          <h5>
+          <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
-          <p>
+          <p className='px-4'>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
             pulvinar purus ultricies posuere nisi justo, placerat cum
             pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
         </div>
-        <div className="col">
+        <div className="col-6">
           <img src={Frame57} width={573} height={248} />
-          <h5>
+          <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
-          <p>
+          <p className='px-4'>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
             pulvinar purus ultricies posuere nisi justo, placerat cum
             pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
@@ -181,25 +192,25 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div className="row mx-3">
-        <div className="col">
+      <div className="row">
+        <div className="col-6">
           <img src={Frame58} width={573} height={248} />
-          <h5>
+          <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
-          <p>
+          <p className='px-4'>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
             pulvinar purus ultricies posuere nisi justo, placerat cum
             pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
         </div>
-        <div className="col">
-          <img src={Frame59} width={573} height={245} />
-          <h5>
+        <div className="col-6">
+          <img alt="" src={Frame59} width={573} height={245} />
+          <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
-          <p>
+          <p className='px-4'>
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
             pulvinar purus ultricies posuere nisi justo, placerat cum
             pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
@@ -207,7 +218,22 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <button className="btn btn-primary offset-md-5">Load More</button>
+      <div className="d-flex justify-content-center my-5">
+        <button className="btn btn-bizka btn-lg rounded-pill">
+          Load More
+        </button>
+      </div>
+      <div className='row bg-bizka-primary p-5 mb-5'>
+        <div className='col-6 p-3'>
+          <p className='text-white fs-1' style={{fontWeight: 'bolder'}}>Ready to share your projects?</p>
+        </div>
+        <div className='col-6 p-3'>
+          <div className='d-flex mt-4 px-2'>
+            <button className='btn btn-lg btn-light text-primary mx-2 py-3 rounded-pill' style={{fontWeight: 'bold'}}>Let's get started</button>
+            <button className='btn btn-lg border text-white mx-2 px-5 rounded-pill' style={{fontWeight: 'bold'}}>Contact Us</button>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
     </>
