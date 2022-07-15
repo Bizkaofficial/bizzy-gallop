@@ -6,7 +6,7 @@ import About from "./pages/About";
 import UserProfile from "./pages/UserProfile";
 import Blog  from "./pages/Blog";
 import Discover from "./pages/Discover";
-import AboutUS from "./pages/AboutUs";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -22,8 +22,8 @@ const App = () => {
         <Route path="/about" caseSensitive="false" element={<About />} />
         <Route path="/discover" caseSensitive="false" element={<Discover />} />
         <Route path="/blog" caseSensitive="false" element={<Blog />} />
-        < Route path="/aboutus" caseSensitive="false" element={<AboutUS />} />
         <Route path="/discover" caseSensitive="false" element={<Discover />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path="*" element={<h1>Page Not Found </h1>} />
       </Routes>
     </>
