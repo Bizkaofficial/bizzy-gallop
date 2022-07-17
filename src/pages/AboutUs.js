@@ -3,7 +3,7 @@ import Aboutus from "../assets/Aboutus.png";
 const AboutUS = () => {
   return (
     <div className="container-fluid my-4">
-      <div className="row row-cols-2 row-cols-md-2">
+      <div className="row">
         <div className="col">
           <img src={Aboutus} width={594} height={425} alt="" />
         </div>
@@ -15,24 +15,24 @@ const AboutUS = () => {
           </p>
           <input
             type="text"
-            className="form-control my-3 py-3"
+            className="form-control my-5 py-3"
             id="firstname"
             placeholder="First Name"
           />
           <input
             type="text"
-            className="form-control my-3 py-3"
+            className="form-control my-5 py-3"
             placeholder="Last Name"
             id="lastname"
           />
           <input
             type="email"
-            className="form-control my-3 py-3"
+            className="form-control my-5 py-3"
             id="email"
             placeholder="Email Address"
           />
           <textarea
-            className="form-control textarea-input my-3"
+            className="form-control textarea-input my-4 bg-white p-4"
             rows="5"
             id="description"
             placeholder="Description"

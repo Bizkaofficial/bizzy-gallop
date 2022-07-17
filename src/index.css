@@ -102,6 +102,11 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   height: 25vh;
 }
 /* Project Upload */
+.top {
+  background: #83C3FF;
+  width: 100%;
+  height: 170px;
+}
 
 .projectUpload {
   font-family: Source, "Sans Pro";
@@ -120,6 +125,10 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     }
+
+.cardboard {
+  border: 5px solid #CBE6FF;
+}
 /* Blog post */
 .round[type="text"] {
   border-radius: 100px;
