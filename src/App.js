@@ -8,7 +8,6 @@ import UserProfile from "./pages/UserProfile";
 import ProjectUpload from "./pages/ProjectUpload";
 import Blog from "./pages/Blog";
 import Discover from "./pages/Discover";
-import AboutUS from "./pages/AboutUs";
 import ProfilePageWorkExp from "./pages/ProfilePageWorkExp";
 import ProfilePageCourse from "./pages/ProfilePageCourse";
 import PersonalInfo from "./pages/PersonalInfo";
@@ -42,7 +41,6 @@ const App = () => {
           element={<ProjectUpload />}
         />
         <Route path="/blog" caseSensitive="false" element={<Blog />} />
-        <Route path="/aboutus" caseSensitive="false" element={<AboutUS />} />
         <Route
           path="/socialmedia"
           caseSensitive="fasle"
@@ -61,12 +59,6 @@ const App = () => {
           element={<ProfilePageCourse />}
         />
         <Route path="/blog" caseSensitive="false" element={<Blog />} />
-        <Route path="/aboutus" caseSensitive="false" element={<AboutUS />} />
-        <Route
-          path="/projectdetails"
-          caseSensitive="false"
-          element={<ProjectDetails />}
-        />
         <Route
           path="/personalinfo"
           caseSensitive="false"

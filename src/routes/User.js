@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import SocialMedia from "../pages/SocialMedia";
 import UserProfile from "../pages/UserProfile";
-import ProfilePageInfo from "../pages/ProfilePageInfo";
 import ProjectDetails from "../pages/ProjectDetails";
 import ProjectUpload from "../pages/ProjectUpload";
 
@@ -11,7 +10,6 @@ const User = () => {
       <Routes>
         <Route path="" element={<UserProfile />} />
         <Route path="social" caseSensitive="false" element={<SocialMedia />} />
-        <Route path="profilepageinfo" caseSensitive="false" element={<ProfilePageInfo />} />
         <Route path="projectdetails" caseSensitive="false" element={<ProjectDetails />} />
         <Route
           path="userProfile"

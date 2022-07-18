@@ -114,7 +114,6 @@ const Blog = () => {
           <p className="fw-bold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </p>
-          <p>
       <div className="row">
         <div className="col-6">
           <img src={Frame52} className='w-100' height={245} />
@@ -139,7 +138,6 @@ const Blog = () => {
           </p>
         </div>
       </div>
-
       <div className="row pb-5">
         <div className="col-6">
           <img src={Frame54} width={573} height={248} />
@@ -168,7 +166,6 @@ const Blog = () => {
       </div>
       <h4 className="pt-5 mt-5 mx-3">Read More Helpful Hints</h4>
       <hr />
-
       <div className="row">
         <div className="col-6">
           <img src={Frame56} width={575} height={245} />
@@ -237,7 +234,9 @@ const Blog = () => {
           </div>
         </div>
       </div>
+      </div>
       <Footer />
+      </div>
     </div>
     </>
   );
