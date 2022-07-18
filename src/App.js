@@ -8,11 +8,11 @@ import UserProfile from "./pages/UserProfile";
 import ProjectUpload from "./pages/ProjectUpload";
 import Blog from "./pages/Blog";
 import Discover from "./pages/Discover";
-import ProjectDetails from "./pages/ProjectDetails";
 import AboutUS from "./pages/AboutUs";
 import ProfilePageWorkExp from "./pages/ProfilePageWorkExp";
 import ProfilePageCourse from "./pages/ProfilePageCourse";
 import PersonalInfo from "./pages/PersonalInfo";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -26,7 +26,10 @@ const App = () => {
         />
         <Route path="/user/*" caseSensitive="false" element={<User />} />
         <Route path="/about" caseSensitive="false" element={<About />} />
+        <Route path="/blog" caseSensitive="false" element={<Blog />} />
         <Route path="/discover" caseSensitive="false" element={<Discover />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path="*" element={<h1>Page Not Found </h1>} />
         <Route
           path="/userProfile"
           caseSensitive="false"
@@ -58,7 +61,6 @@ const App = () => {
         />
         <Route path="/blog" caseSensitive="false" element={<Blog />} />
         <Route path="/aboutus" caseSensitive="false" element={<AboutUS />} />
-        <Route path="/discover" caseSensitive="fasle" element={<Discover />} />
         <Route
           path="/projectdetails"
           caseSensitive="false"
