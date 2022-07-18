@@ -90,23 +90,11 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   border-radius: 100px;
 }
 
-.top{
-  background-color: #83C3FF;
-  max-width: 1330px;
-  height: 20vh;
-}
 .aside {
   width: 608px;
   height: 860px;
   margin-left: 72px;
   background-color: #CBE6FF;
-  line-height: 70px;
-  border: 2px solid seashell;
-  border-radius: 10px;
-}
-
-.r_side {
-  width: 50%;
 }
 
 .bottom {
@@ -114,6 +102,11 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   height: 25vh;
 }
 /* Project Upload */
+.top {
+  background: #83C3FF;
+  width: 100%;
+  height: 170px;
+}
 
 .projectUpload {
   font-family: Source, "Sans Pro";
@@ -132,6 +125,10 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     }
+
+.cardboard {
+  border: 5px solid #CBE6FF;
+}
 /* Blog post */
 .round[type="text"] {
   border-radius: 100px;
@@ -154,3 +151,5 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
 .margin-top {
   margin-top: 370px;
 }
+
+/*  */

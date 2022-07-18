@@ -101,7 +101,7 @@ const ProjectDetails = () => {
         <button type="button" className="btn btn-primary me-md-4 px-4">
           Submit
         </button>
-        <button type="button" className="btn btn-outline-dark px-4">
+        <button type="submit" className="btn btn-outline-dark px-4">
           back
         </button>
       </div>
