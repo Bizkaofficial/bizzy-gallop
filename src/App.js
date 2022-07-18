@@ -13,6 +13,7 @@ import AboutUS from "./pages/AboutUs";
 import ProfilePageWorkExp from "./pages/ProfilePageWorkExp";
 import ProfilePageCourse from "./pages/ProfilePageCourse";
 import PersonalInfo from "./pages/PersonalInfo";
+import Header1 from "./pages/Header1";
 
 const App = () => {
   return (
@@ -69,6 +70,7 @@ const App = () => {
           caseSensitive="false"
           element={<PersonalInfo />}
         />
+        <Route path="/header1" caseSensitive="fasle" element={<Header1 />} />
       </Routes>
     </>
   );
