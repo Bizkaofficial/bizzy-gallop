@@ -9,7 +9,6 @@ const PersonalInfo = () => {
           Back to Profile
         </button>
       </div>
-
       <div className="row mx-auto my-5">
         <div className="col">
           <p className="text-warning">Personal details</p>
