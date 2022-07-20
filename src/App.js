@@ -41,14 +41,11 @@ const App = () => {
           caseSensitive="fasle"
           element={<ProjectUpload />}
         />
-        <Route path="/blog" caseSensitive="false" element={<Blog />} />
         <Route
           path="/socialmedia"
           caseSensitive="fasle"
           element={<SocialMedia />}
         />
-        <Route path="/discover" caseSensitive="fasle" element={<Discover />} />
-
         <Route
           path="/profilepageworkexp"
           caseSensitive="fasle"
@@ -59,7 +56,6 @@ const App = () => {
           caseSensitive="fasle"
           element={<ProfilePageCourse />}
         />
-        <Route path="/blog" caseSensitive="false" element={<Blog />} />
         <Route
           path="/projectdetails"
           caseSensitive="false"
