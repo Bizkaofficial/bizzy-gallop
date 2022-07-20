@@ -161,4 +161,8 @@ Offset: 1px, 5px rgba(0, 0, 0, 1.25);
   margin-top: 370px;
 }
 
-/*  */
+/* personal info page */
+.info--form {
+background-color: #01515C;
+border-radius: 30px;
+}
