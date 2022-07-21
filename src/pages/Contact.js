@@ -1,10 +1,10 @@
 import Aboutus from "../assets/Aboutus.png";
-import Navbar from "../layouts/Navbar";
+import Header1 from "./Header1";
 
 const Contact = () => {
   return (
     <>
-    <Navbar />
+    <Header1 />
     <div className="container-fluid my-4">
       <div className="row">
         <div className="col">

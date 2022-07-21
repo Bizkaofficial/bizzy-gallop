@@ -14,12 +14,12 @@ import Frame58 from "../assets/Frame58.png";
 import Frame59 from "../assets/Frame59.png";
 import Vector from "../assets/Vector.png";
 import Footer from "../layouts/Footer";
-import Navbar from "../layouts/Navbar";
+import Header1 from "./Header1";
 
 const Blog = () => {
   return (
     <>
-    <Navbar />
+    <Header1 />
     <div className="container">
       <div className="row mx-3">
         <div className="col-6 align-self-end">
