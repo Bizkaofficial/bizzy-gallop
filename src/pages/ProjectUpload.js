@@ -1,39 +1,89 @@
 const ProjectUpload = () => {
- return (
-    <div className="projectUpload">
-    <button type="button" className="btn btn-outline-secondary mx-3 my-3 float-end">Upload</button> <br />
-    <div className="mx-3 my-3">
-    <form className="projectForm">
-        <label className="form-label h5" for="ProjectTitle">ProjectTitle</label>
-        <input className="form-control text-input" type="text" /> <br />
+  return (
+    <div className="projectUpload ">
+      <div className="text-center offset-sm-5 align-item-end">
+        <button
+          type="button"
+          style={{ background: "#CBE6FF" }}
+          className="btn"
+        >
+          Upload
+        </button>
+        <p className="fs-5 d-inline ms-3">PNG/JPG/xlsx</p>
+      </div>
 
-        <label className="form-label h5" for="ProjectBackground" >Project Background</label> <br />
-        <textarea className="form-control textarea-input" rows="5" id="project background" name="text"></textarea> <br />
-
-        <label className="form-label h5" for="Goal">Goal</label> <br />
-        <input className="form-control text-input" type="text" /> <br />
-
-        <label className="form-label h5" for="Result">Result</label> <br />
-        <input className="form-control text-input" type="text" /> <br />
-
-        <label className="form-label h5" for="Duration">Duration</label> <br />
-        <input className="form-control text-input" type="text" /> <br />
-
-        <label className="form-label h5" for="Interpretation">Interpretation</label> <br />
-        <textarea class="form-control textarea-input" rows="5" id="comment" name="text"></textarea> <br />
-
-        <label className="form-label h5" for="ToolsUsed" >Tools Used</label> <br />
-        <textarea class="form-control textarea-input" rows="5" id="comment" name="text"></textarea> <br />
-
-        <label className="form-label h5" for="Video" >Add Video Format</label>
-        <p>Please kindly ensure the video is not more than 10 mb in size 3gp, <br /> Mp4 supported format.</p>
-        <input className="form-control text-input" type="text" /> <br />
-
-    </form>
+      <br />
+      <div className="mx-3">
+        <form className="projectForm">
+          <label className="form-label fs-3 fw-bold" for="ProjectTitle">
+            Project Title
+          </label>
+          <input className="form-control text-input" type="text" /> <br />
+          <label className="form-label fs-3 fw-bold" for="ProjectBackground">
+            Project Background
+          </label>
+          <br />
+          <textarea
+            className="form-control textarea-input"
+            rows="5"
+            id="project background"
+            name="text"
+          ></textarea>
+          <br />
+          <label className="form-label fs-3 fw-bold" for="Goal">
+            Goal
+          </label>
+          <br />
+          <input className="form-control text-input" type="text" /> <br />
+          <label className="form-label fs-3 fw-bold" for="Result">
+            Result
+          </label>
+          <br />
+          <input className="form-control text-input" type="text" /> <br />
+          <label className="form-label fs-3 fw-bold" for="Duration">
+            Duration
+          </label>
+          <br />
+          <input className="form-control text-input" type="text" /> <br />
+          <label className="form-label fs-3 fw-bold" for="Interpretation">
+            Interpretation
+          </label>
+          <br />
+          <textarea
+            class="form-control textarea-input"
+            rows="5"
+            id="comment"
+            name="text"
+          ></textarea>
+          <br />
+          <label className="form-label fs-3 fw-bold" for="ToolsUsed">
+            Tools Used
+          </label>
+          <br />
+          <textarea
+            class="form-control textarea-input"
+            rows="5"
+            id="comment"
+            name="text"
+          ></textarea>
+          <br />
+          <label className="form-label fs-3 fw-bold" for="Video">
+            Add Video Format
+          </label>
+          <p className="fw-bold fs-5">
+            Please kindly ensure the video is not more than 10 mb in size 3gp,{" "}
+            <br /> Mp4 supported format.
+          </p>
+          <input className="form-control text-input mb-5" type="text" />
+          <div className="text-end">
+            <button type="button" class="btn btn-primary my-3 px-4 ">
+              preview
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-    <button type="button" class="btn btn-primary mx-3 my-3 float-end ml-4">preview</button> 
-    </div>
- )   
-}
+  );
+};
 
 export default ProjectUpload;

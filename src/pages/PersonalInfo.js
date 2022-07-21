@@ -11,7 +11,7 @@ const PersonalInfo = () => {
       </div>
       <div className="row mx-auto my-5">
         <div className="col position-relative">
-          <p className="text-warning fs-4 mx-4">Personal details</p>
+          <p className="text-warning fw-semibold fs-4 mx-4">Personal details</p>
         </div>
         <div className="info--form col mx-5 bg-light shadow-lg ">
           <form className=" my-5 mx-3">
@@ -58,7 +58,7 @@ const PersonalInfo = () => {
                 placeholder="Headline"
               />
             </div>
-            <div>
+            <div className="">
               <textarea
                 rows="5"
                 className="form-control form-item textarea-input p-3 bg-white"
