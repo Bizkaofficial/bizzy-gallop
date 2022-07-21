@@ -14,6 +14,7 @@ import PersonalInfo from "./pages/PersonalInfo";
 import Header1 from "./pages/Header1";
 import Header2 from "./pages/Header2";
 import Contact from "./pages/Contact";
+import ProjectDetails from "./pages/ProjectDetails";
 
 const App = () => {
   return (
@@ -41,14 +42,11 @@ const App = () => {
           caseSensitive="fasle"
           element={<ProjectUpload />}
         />
-        <Route path="/blog" caseSensitive="false" element={<Blog />} />
         <Route
           path="/socialmedia"
           caseSensitive="fasle"
           element={<SocialMedia />}
         />
-        <Route path="/discover" caseSensitive="fasle" element={<Discover />} />
-
         <Route
           path="/profilepageworkexp"
           caseSensitive="fasle"
@@ -59,7 +57,10 @@ const App = () => {
           caseSensitive="fasle"
           element={<ProfilePageCourse />}
         />
-        <Route path="/blog" caseSensitive="false" element={<Blog />} />
+        <Route
+          path="/projectdetails"
+          caseSensitive="false"
+        />
         <Route
           path="/personalinfo"
           caseSensitive="false"
