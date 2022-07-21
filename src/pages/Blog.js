@@ -22,7 +22,7 @@ const Blog = () => {
     <Header1 />
     <div className="container">
       <div className="row mx-3">
-        <div className="col-6 align-self-end">
+        <div className="col-md-6 align-self-end">
           <h1 className="mb-5">Data is Life</h1>
           <p className="mt-4 lh-lg">
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
@@ -31,7 +31,7 @@ const Blog = () => {
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
         </div>
-        <div className="col-6">
+        <div className="col-md-6">
           <img src={Frame47} className='w-100' height={250} />
           <p className="h5 mx-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
@@ -39,10 +39,10 @@ const Blog = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-6">
+        <div className="col-md-6">
           <img src={Frame48} className='w-100' height={405} />
         </div>
-        <div className="col-6 align-self-end">
+        <div className="col-md-6 align-self-end">
           <img src={Frame49} className='w-100' height={250} />
           <p className="h5 mx-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
@@ -52,7 +52,7 @@ const Blog = () => {
       <h4 className="mx-3">Latest Posts</h4>
       <hr />
       <div className="row mt-5">
-        <div className="col-7">
+        <div className="col-md-7">
           <div className='firstCard'>
             <img alt='' src={Frame50} className='w-100' height={250} />
             <h4 className='px-4'>
@@ -78,7 +78,7 @@ const Blog = () => {
             </p>
           </div>
         </div>
-        <div className="col-5 p-5">
+        <div className="col-md-5 p-5">
           <div className="input-group">
             <input
               type="text"
@@ -87,11 +87,12 @@ const Blog = () => {
               aria-label="Search bar"
               aria-describedby="basic-addon2"
             />
-            <span className="input-group-text bg-primary" id="basic-addon2">
-              <img src={Vector} width={23} height={21} />
-            </span>
+            <div className='input-group-append'>
+              <span className="input-group-text bg-primary" id="basic-addon2">
+                <img alt='' src={Vector} className='w-100'height={32}/>
+              </span>
+            </div>
           </div>
-          <div className="post--text d-grid bg-primary my-5 lh-lg text-light px-5 py-4">
           <div className="bg-bizka-primary my-5 lh-lg text-light px-5 py-5">
             <p className="pb-5 font-weight-bold fs-5" >
               Register for free to receive relevant updates on latest Data
@@ -108,14 +109,9 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid row">
-        <div className="col">
-          <img src={Frame52} width={575} height={245} />
-          <p className="fw-bold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
-          </p>
+
       <div className="row">
-        <div className="col-6">
+        <div className="col-md-6">
           <img src={Frame52} className='w-100' height={245} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
@@ -127,20 +123,8 @@ const Blog = () => {
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
         </div>
+        <div className="col-md-6">
           <img src={Frame53} className='w-100' height={248} />
-          <h5 className='px-4'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
-          </h5>
-          <p className='px-4'>
-            pulvinar purus ultricies posuere nisi justo, placerat cum
-            pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
-            accumsan lobortis penatibus et odio tempus, suscipit
-          </p>
-        </div>
-      </div>
-      <div className="row pb-5">
-        <div className="col-6">
-          <img src={Frame54} width={573} height={248} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -151,8 +135,23 @@ const Blog = () => {
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
         </div>
-        <div className="col-6">
-          <img src={Frame55} width={573} height={245} />
+      </div>
+
+      <div className="row pb-5">
+        <div className="col-md-6">
+          <img src={Frame54} className='w-100' height={248} />
+          <h5 className='px-4'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
+          </h5>
+          <p className='px-4'>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
+            pulvinar purus ultricies posuere nisi justo, placerat cum
+            pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
+            accumsan lobortis penatibus et odio tempus, suscipit
+          </p>
+        </div>
+        <div className="col-md-6">
+          <img src={Frame55} className='w-100' height={245} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -166,9 +165,10 @@ const Blog = () => {
       </div>
       <h4 className="pt-5 mt-5 mx-3">Read More Helpful Hints</h4>
       <hr />
+
       <div className="row">
-        <div className="col-6">
-          <img src={Frame56} width={575} height={245} />
+        <div className="col-md-6">
+          <img src={Frame56} className='w-100' height={245} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -179,8 +179,8 @@ const Blog = () => {
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
         </div>
-        <div className="col-6">
-          <img src={Frame57} width={573} height={248} />
+        <div className="col-md-6">
+          <img src={Frame57} className='w-100' height={248} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -193,8 +193,8 @@ const Blog = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-6">
-          <img src={Frame58} width={573} height={248} />
+        <div className="col-md-6">
+          <img src={Frame58} className='w-100' height={248} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -205,8 +205,8 @@ const Blog = () => {
             accumsan lobortis penatibus et odio tempus, suscipit
           </p>
         </div>
-        <div className="col-6">
-          <img alt="" src={Frame59} width={573} height={245} />
+        <div className="col-md-6">
+          <img alt="" src={Frame59} className='w-100' height={245} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -224,19 +224,17 @@ const Blog = () => {
         </button>
       </div>
       <div className='row bg-bizka-primary p-5 mb-5'>
-        <div className='col-6 p-3'>
+        <div className='col-md-6 p-3'>
           <p className='text-white fs-1' style={{fontWeight: 'bolder'}}>Ready to share your projects?</p>
         </div>
-        <div className='col-6 p-3'>
-          <div className='d-flex mt-4 px-2'>
-            <button className='btn btn-lg btn-light text-primary mx-2 py-3 rounded-pill' style={{fontWeight: 'bold'}}>Let's get started</button>
-            <button className='btn btn-lg border text-white mx-2 px-5 rounded-pill' style={{fontWeight: 'bold'}}>Contact Us</button>
+        <div className='col-md-6 p-3'>
+          <div className='d-flex flex-column flex-md-row mt-4 px-2'>
+            <button className='btn btn-lg btn-light text-primary mx-2 py-3 my-1 rounded-pill' style={{fontWeight: 'bold'}}>Let's get started</button>
+            <button className='btn btn-lg border text-white mx-2 px-5 my-1 rounded-pill' style={{fontWeight: 'bold'}}>Contact Us</button>
           </div>
         </div>
       </div>
-      </div>
       <Footer />
-      </div>
     </div>
     </>
   );
