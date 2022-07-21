@@ -45,7 +45,7 @@ const Header1 = () => {
               </Link>
             </li>
             <li className="nav-item active ">
-              <Link className="nav-link" to="/discover">
+              <Link className="nav-link" to="/contact">
                 <strong>Contact</strong>
               </Link>
             </li>
@@ -56,13 +56,21 @@ const Header1 = () => {
           <ul className="d-flex mr-3 gap-4 my-auto">
             <li className="list-inline-item">
               <Link to="/accounts/login">
-                <button type="text" className="btn btn-outline-primary px-4">
+                <button
+                  type="text"
+                  style={{ borderRadius: "15px" }}
+                  className="btn btn-outline-primary px-4"
+                >
                   Logout
                 </button>
               </Link>
             </li>
             <li className="list-inline-item">
-              <Link to="/accounts/register" className="btn btn-primary px-4">
+              <Link
+                to="/accounts/register"
+                style={{ borderRadius: "15px" }}
+                className="btn btn-primary px-4"
+              >
                 Account
               </Link>
             </li>
