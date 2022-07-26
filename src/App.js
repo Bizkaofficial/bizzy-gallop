@@ -12,6 +12,7 @@ import ProfilePageWorkExp from "./pages/ProfilePageWorkExp";
 import ProfilePageCourse from "./pages/ProfilePageCourse";
 import PersonalInfo from "./pages/PersonalInfo";
 import Header1 from "./pages/Header1";
+import Header2 from "./pages/Header2";
 import Contact from "./pages/Contact";
 import ProjectDetails from "./pages/ProjectDetails";
 
@@ -29,7 +30,7 @@ const App = () => {
         <Route path="/about" caseSensitive="false" element={<About />} />
         <Route path="/blog" caseSensitive="false" element={<Blog />} />
         <Route path="/discover" caseSensitive="false" element={<Discover />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<h1>Page Not Found </h1>} />
         <Route
           path="/userProfile"
@@ -67,6 +68,7 @@ const App = () => {
           element={<PersonalInfo />}
         />
         <Route path="/header1" caseSensitive="fasle" element={<Header1 />} />
+        <Route path="/header2" caseSensitive="false" element={<Header2 />} />
       </Routes>
     </>
   );
