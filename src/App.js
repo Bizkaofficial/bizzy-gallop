@@ -59,6 +59,7 @@ const App = () => {
         <Route
           path="/projectdetails"
           caseSensitive="false"
+          element={<ProjectDetails />}
         />
         <Route
           path="/personalinfo"

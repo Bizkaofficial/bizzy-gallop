@@ -114,7 +114,6 @@ const Discover = () => {
               </div>
             </div>
           </div>
-
           <Footer />
         </div>
     </>
