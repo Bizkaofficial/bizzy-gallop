@@ -1,11 +1,11 @@
 import Footer from "../layouts/Footer";
-import Navbar from "../layouts/Navbar";
+import Header1 from "./Header1";
 
 const Discover = () => {
   return (
     <>
-      <Navbar />
-        <div className='container'>
+      <Header1 />
+        <div className='container mt-5'>
           <div className='d-flex flex-sm-row flex-column justify-content-around my-3'>
             <div className="p-2 border rounded-pill mb-2">
               <p className="text-center h6 px-2">Descriptive</p>
