@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Frame47 from "../assets/Frame47.png";
 import Frame48 from "../assets/Frame48.png";
 import Frame49 from "../assets/Frame49.png";
@@ -32,7 +31,7 @@ const Blog = () => {
           </p>
         </div>
         <div className="col-md-6">
-          <img src={Frame47} className='w-100' height={250} />
+          <img alt='' src={Frame47} className='w-100' height={250} />
           <p className="h5 mx-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </p>
@@ -40,10 +39,10 @@ const Blog = () => {
       </div>
       <div className="row">
         <div className="col-md-6">
-          <img src={Frame48} className='w-100' height={405} />
+          <img alt='' src={Frame48} className='w-100' height={405} />
         </div>
         <div className="col-md-6 align-self-end">
-          <img src={Frame49} className='w-100' height={250} />
+          <img alt='' src={Frame49} className='w-100' height={250} />
           <p className="h5 mx-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </p>
@@ -112,7 +111,7 @@ const Blog = () => {
 
       <div className="row">
         <div className="col-md-6">
-          <img src={Frame52} className='w-100' height={245} />
+          <img alt='' src={Frame52} className='w-100' height={245} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -124,7 +123,7 @@ const Blog = () => {
           </p>
         </div>
         <div className="col-md-6">
-          <img src={Frame53} className='w-100' height={248} />
+          <img alt='' src={Frame53} className='w-100' height={248} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -139,7 +138,7 @@ const Blog = () => {
 
       <div className="row pb-5">
         <div className="col-md-6">
-          <img src={Frame54} className='w-100' height={248} />
+          <img alt='' src={Frame54} className='w-100' height={248} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -151,7 +150,7 @@ const Blog = () => {
           </p>
         </div>
         <div className="col-md-6">
-          <img src={Frame55} className='w-100' height={245} />
+          <img alt='' src={Frame55} className='w-100' height={245} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -168,7 +167,7 @@ const Blog = () => {
 
       <div className="row">
         <div className="col-md-6">
-          <img src={Frame56} className='w-100' height={245} />
+          <img alt='' src={Frame56} className='w-100' height={245} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -180,7 +179,7 @@ const Blog = () => {
           </p>
         </div>
         <div className="col-md-6">
-          <img src={Frame57} className='w-100' height={248} />
+          <img alt='' src={Frame57} className='w-100' height={248} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -194,7 +193,7 @@ const Blog = () => {
       </div>
       <div className="row">
         <div className="col-md-6">
-          <img src={Frame58} className='w-100' height={248} />
+          <img alt='' src={Frame58} className='w-100' height={248} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
@@ -206,7 +205,7 @@ const Blog = () => {
           </p>
         </div>
         <div className="col-md-6">
-          <img alt="" src={Frame59} className='w-100' height={245} />
+          <img alt='' src={Frame59} className='w-100' height={245} />
           <h5 className='px-4'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis
           </h5>
