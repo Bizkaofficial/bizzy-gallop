@@ -67,7 +67,7 @@ const Register = () => {
   const addStyle = {
     backgroundImage: `url(${sideImg})`,
     // backgroundColor: `rgba(70, 100, 190, 0.6)`,
-    width: "50vw",
+    // width: "50vw",
     height: "100vh",
     backgroundSize: "cover",
   };
@@ -75,8 +75,8 @@ const Register = () => {
   return (
     <>
       <section className="">
-        <div className="d-flex flex-sm-column flex-md-row flex-lg-row">
-          <div className="col-6" style={addStyle}>
+        <div className="d-flex flex-column flex-lg-row">
+          <div className="col-lg-6 col-12" style={addStyle}>
             <div className="text-center mt-5 py-5 col-6 container">
               <div className="mt-5 p-5"></div>
               <div className="text-center container">
@@ -97,7 +97,7 @@ const Register = () => {
               </div>
             </div>
           </div>
-          <div className="col-6 container mt-sm-4 px-sm-4">
+          <div className="col-lg-6 col-12 container mt-sm-4 px-sm-4">
             <form onSubmit={formik.handleSubmit} className="p-3 mx-5">
               <div className="text-center mt-1">
                 <img
