@@ -1,5 +1,5 @@
 import Footer from "../layouts/Footer";
-import Header1 from "./Header1";
+import Header1 from "../layouts/Header1";
 
 const Discover = () => {
   return (

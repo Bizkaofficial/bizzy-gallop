@@ -1,5 +1,5 @@
 import Aboutus from "../assets/Aboutus.png";
-import Header1 from "./Header1";
+import Header1 from "../layouts/Header1";
 
 const Contact = () => {
   return (
