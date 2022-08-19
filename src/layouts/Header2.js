@@ -54,14 +54,14 @@ const Header2 = () => {
             </li>
 
             <li className="nav-item active ">
-              <Link className="nav-link text-primary" to="/discover">
-                Add a project
+              <Link className="nav-link text-primary" to="/user">
+                Profile
               </Link>
             </li>
           </ul>
-          <button type="text" className="btn btn-primary px-5">
+          <Link className="btn btn-primary px-5" to="/">
             Sign Out
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

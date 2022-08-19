@@ -61,7 +61,7 @@ const Header1 = () => {
                   style={{ borderRadius: "15px" }}
                   className="btn btn-outline-primary px-4"
                 >
-                  Logout
+                  Login
                 </button>
               </Link>
             </li>
@@ -71,7 +71,7 @@ const Header1 = () => {
                 style={{ borderRadius: "15px" }}
                 className="btn btn-primary px-4"
               >
-                Account
+                Get Started
               </Link>
             </li>
           </ul>

@@ -1,8 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
 import "../index.css"
 import Footer from "../layouts/Footer";
-import Navbar from "../layouts/Navbar";
+// import Navbar from "../layouts/Navbar";
 import cardImg from "../assets/cards.jpg";
+import Header1 from "../layouts/Header1";
 
 const Home = () => {
 
@@ -10,7 +11,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+      <Header1 />
       <section className="container h-50">
         <div className="row">
           <div className="col-6">

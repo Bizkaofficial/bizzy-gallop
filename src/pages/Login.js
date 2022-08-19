@@ -6,9 +6,17 @@ import * as Yup from "yup";
 import "../index.css";
 import sideImg from "../assets/registerbg.jfif";
 import bizkaLogo from "../assets/logo.PNG";
+import { useDispatch } from "react-redux";
+import { login } from "../actions";
 
 const Login = () => {
+
+  useEffect(() => {
+    document.title = "Bizka || Login";
+  })
+
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [showPwd, setShowPwd] = useState(false);
   const [success, setSuccess] = useState(false);
   const [Errorss, setErrorss] = useState(false);
@@ -42,15 +50,13 @@ const Login = () => {
           setErrorss(false);
           console.log(res);
           if (res.status === 200) {
-            setSuccess(res.data.success);
-          } else if (res.status === 201) {
-            setSuccess(res.data.success);
-          } else {
-            console.log(res);
+            const resp = res.data.success;
+            setSuccess(resp);
+            dispatch(login(resp));
+            navigate("/user");
           }
         })
         .catch((err) => {
-          // console.log(err);
           setIsLoading(false);
           setErrorss(err.message);
         });

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Ellipse4 from "../assets/Ellipse4.png";
 import Ellipse5 from "../assets/Ellipse5.png";
 
@@ -5,9 +6,9 @@ const PersonalInfo = () => {
   return (
     <section className="my-4">
       <div className="text-center">
-        <button type="button" className="btn btn-primary">
+        <Link type="button" className="btn btn-primary" to="/user">
           Back to Profile
-        </button>
+        </Link>
       </div>
       <div className="row mx-auto my-5">
         <div className="col position-relative">
