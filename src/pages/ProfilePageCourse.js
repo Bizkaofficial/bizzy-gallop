@@ -1,4 +1,4 @@
-const profilePageCourse = () => {
+const ProfilePageCourse = () => {
   return (
     <section className="container my-4">
       <button type="button" className="btn btn-primary d-block mx-auto my-5 ">
@@ -72,4 +72,4 @@ const profilePageCourse = () => {
     </section>
   );
 };
-export default profilePageCourse;
+export default ProfilePageCourse;

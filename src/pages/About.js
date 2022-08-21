@@ -1,7 +1,7 @@
 import flexImg from "../assets/About_img_1.jpeg";
 import flexImg2 from "../assets/About_img_2.jpeg";
 import flexImg3 from "../assets/About_img_3.jpeg";
-import Header1 from "../pages/Header1";
+import Header1 from "../layouts/Header1";
 const About = () => {
   return (
     <>

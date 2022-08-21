@@ -25,31 +25,43 @@ const Header2 = () => {
           id="navbarToggleContent"
         >
           <ul className="navbar-nav">
-            <li className="nav-item active ">
+            <li className="nav-item active">
               <Link className="nav-link text-primary" to="/discover">
-                Disovers
+                Discovers
               </Link>
             </li>
-            <li className="nav-item">
-              <input
-                class="form-control me-2"
-                type="search"
+            <li className=" me-5 fs-6" >
+              <div className="input-group input-group-sm">
+                <input
                 placeholder="Search"
-                aria-label="Search"
-                img src={Vector} alt=""
+                aria-label="Search bar"
+                aria-describedby="basic-addon2"
+                className="form-control-sm border-0"
               />
+              <div className='input-group-append'>
+              <span className="" id="basic-addon2">
+                <img
+                src={Vector}
+                className="bg-dark"
+                alt=""
+                width={18}
+                height={18}
+              />
+              </span>
+              </div>
+              </div>
               
             </li>
 
             <li className="nav-item active ">
-              <Link className="nav-link text-primary" to="/discover">
-                Add a project
+              <Link className="nav-link text-primary" to="/user">
+                Profile
               </Link>
             </li>
           </ul>
-          <button type="text" className="btn btn-primary px-4">
+          <Link className="btn btn-primary px-5" to="/">
             Sign Out
-          </button>
+          </Link>
         </div>
       </div>
     </nav>
