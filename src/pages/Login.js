@@ -15,48 +15,38 @@ const Login = () => {
 
   const formik = useFormik({
     initialValues: {
-      username: "",
+      email: "",
       password: "",
     },
     validationSchema: Yup.object({
-      username: Yup.string().required("Required"),
+      email: Yup.string().required("Required"),
+      password: Yup.string().required("Required")
     }),
     onSubmit: (values) => {
       console.log(values);
       setErrorss(false);
-      axios
-        .post(
-          "https://bizka.onrender.com/accounts/request-reset-email/",
-          values
-        )
-        .then((res) => {
-          // console.log(res);
-          if (res.status === 200) {
-            setSuccess(res.data.success);
-          } else if (res.status === 201) {
-            setSuccess(res.data.success);
-          } else {
-            console.log(res);
-          }
-        })
-        .catch((err) => {
+      axios.post("https://bizka.onrender.com/auth/login/", values, {headers: {
+            'Content-Type': 'application/json'
+          }}
+        ).then((res) => {
+          console.log(res);
+        }).catch((err) => {
           setErrorss(err.message);
+          console.log(err)
         });
     },
   });
 
   const addStyle = {
-    backgroundImage: `url(${sideImg})`,
-    // backgroundColor: `rgba(70, 100, 190, 0.6)`,
-    width: "50vw",
+    backgroundImage: `linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.4)), url(${sideImg})`,
     height: "100vh",
     backgroundSize: "cover",
   };
 
   return (
     <div>
-      <div className="d-flex flex-sm-column flex-md-row flex-lg-row">
-        <div className="col-lg-6 col-md-12 col-sm-12" style={addStyle}>
+      <div className="row w-100 mx-0">
+        <div className="col-lg-6" style={addStyle}>
           <div className="text-center mt-5 py-5 col-6 container">
             <div className="mt-5 p-5"></div>
             <div className="text-center container">
@@ -77,7 +67,7 @@ const Login = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 col-md-12 col-sm-12 container mt-4 px-4">
+        <div className="col-lg-6">
           <form onSubmit={formik.handleSubmit} className="p-3 mx-5">
             <div className="text-center mt-3">
               <img
@@ -92,18 +82,18 @@ const Login = () => {
             <input
               type="text"
               placeholder="Email/Username"
-              name="username"
+              name="email"
               className={
-                formik.touched.username && formik.errors.username
+                formik.touched.email && formik.errors.email
                   ? "my-2 bizka-form bizka-invalid"
                   : "my-2 bizka-form"
               }
-              value={formik.values.username}
+              value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {formik.touched.username ? (
-              <div className="text-danger">{formik.errors.username}</div>
+            {formik.touched.email ? (
+              <div className="text-danger">{formik.errors.email}</div>
             ) : null}
             <input
               type={showPwd ? `text` : `password`}
