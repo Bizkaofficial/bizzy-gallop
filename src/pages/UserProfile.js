@@ -6,63 +6,62 @@ import UserProfileImg4 from "../assets/userprofile4.png";
 import UserProfileImg5 from "../assets/userprofile5.png";
 import carbon_copy from "../assets/carbon_copy-link.png";
 import Group from "../assets/Group.png";
+import { Link } from "react-router-dom";
 
 const UserProfile = () => {
   return (
     <div className="">
-      <section className="top">
-      </section>
+      {/* <section className="top"></section> */}
       <section className="container-fluid row">
         <div className="col-md-4 aside rounded-top rounded-bottom text-center">
           <img className="userprofileimg1 mt-5" src={UserProfileImg1} alt="" />
           <h4 className="opacity-50">Name</h4>
           <h4 className="opacity-50">Headlines</h4>
           <div className="fs-4 fw-4 lh-lg my-5">
-            <a
+            <Link
               className="link-dark list-group text-decoration-none mb-3"
-              href="#"
-              alt=""
+              to="/user/personal-info"
             >
               Personal Details
-            </a>
-            <a
+            </Link>
+            <Link
               className="link-dark list-group text-decoration-none mb-3"
-              href="#"
+              to="/"
               alt=""
             >
               Professional Summary
-            </a>
-            <a
+            </Link>
+            <Link
               className="link-dark list-group text-decoration-none mb-3"
-              href="#"
+              to="/"
               alt=""
             >
               Service &amp; Tools
-            </a>
-            <a
+            </Link>
+            <Link
               className="link-dark list-group text-decoration-none mb-3"
-              href="#"
+              to="/user/work-experience"
               alt=""
             >
               Work Experience
-            </a>
-            <a
+            </Link>
+            <Link
               className="link-dark list-group text-decoration-none mb-3"
-              href="#"
+              to="/"
               alt=""
             >
               Education
-            </a>
-            <a
+            </Link>
+            <Link
               className="link-dark list-group text-decoration-none mb-3"
-              href="#"
+              to="/user/course"
               alt=""
             >
               Course &amp; Certificates
-            </a>
-            <a className="link-dark text-decoration-none" href="#" alt="">
+            </Link>
+            <Link className="link-dark text-decoration-none" to="/" alt="">
               Contact Info
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-md-5 offset-md-1">
@@ -77,7 +76,12 @@ const UserProfile = () => {
               dictum. Pretium.
             </p>
             <div className="float-end d-flex">
-              <button className="btn btn-outline-dark fs-5">Add Project</button>
+              <Link
+                className="btn btn-outline-dark fs-5"
+                to="/user/project-upload"
+              >
+                Add Project
+              </Link>
               <div className="">
                 <img src={carbon_copy} alt="" width={37} heigth={37} />
               </div>
@@ -91,7 +95,7 @@ const UserProfile = () => {
                   <img
                     className="card-img-top"
                     src={UserProfileImg2}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                 </div>
               </div>
@@ -100,7 +104,7 @@ const UserProfile = () => {
                   <img
                     className="card-img-top"
                     src={UserProfileImg3}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                 </div>
               </div>
@@ -109,7 +113,7 @@ const UserProfile = () => {
                   <img
                     className="card-img-top"
                     src={UserProfileImg4}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                 </div>
               </div>
@@ -118,18 +122,18 @@ const UserProfile = () => {
                   <img
                     className="card-img-top"
                     src={UserProfileImg5}
-                    alt="Card image cap"
+                    alt="Card cap"
                   />
                 </div>
               </div>
-              <div className="col my-3">
+              <Link className="col my-3" to="/user/project-upload">
                 <div className=" py-4 cardboard">
                   <div className="card-text text-center">
                     <img src={Group} alt="" width={50} height={50} />
                     <p className="small text-primary">Add New Project</p>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

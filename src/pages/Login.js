@@ -6,9 +6,17 @@ import * as Yup from "yup";
 import "../index.css";
 import sideImg from "../assets/registerbg.jfif";
 import bizkaLogo from "../assets/logo.PNG";
+import { useDispatch } from "react-redux";
+import { login } from "../actions";
 
 const Login = () => {
+
+  useEffect(() => {
+    document.title = "Bizka || Login";
+  })
+
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [showPwd, setShowPwd] = useState(false);
   const [success, setSuccess] = useState(false);
   const [Errorss, setErrorss] = useState(false);
@@ -24,28 +32,32 @@ const Login = () => {
       password: Yup.string().required("Required"),
     }),
     onSubmit: (values) => {
-      isLoading(true)
+      setIsLoading(true);
       const bizka = {};
       bizka.email = values.username;
       bizka.password = values.password;
-      // console.log(values);
+      // console.log(bizka);
       setErrorss(false);
       axios
         .post(
-          "http://bizka.herokuapp.com/auth/login/",
+          "https://bizka.herokuapp.com/auth/login/",
           bizka
+          // {"email": bizka.email, "password": bizka.password}
+          // { proxy: { port: 8001 } }
         )
         .then((res) => {
+          setIsLoading(false);
+          setErrorss(false);
           console.log(res);
           if (res.status === 200) {
-            setSuccess(res.data.success);
-          } else if (res.status === 201) {
-            setSuccess(res.data.success);
-          } else {
-            console.log(res);
+            const resp = res.data.success;
+            setSuccess(resp);
+            dispatch(login(resp));
+            navigate("/user");
           }
         })
         .catch((err) => {
+          setIsLoading(false);
           setErrorss(err.message);
         });
     },
@@ -94,6 +106,7 @@ const Login = () => {
               />
               <h3 className="h3">Log in</h3>
             </div>
+            {Errorss ? <div className="alert alert-danger text-danger">{Errorss}</div> : null}
             <div className="g-signin2" data-onsuccess="onSignIn"></div>
             <input
               type="text"
@@ -139,7 +152,7 @@ const Login = () => {
             </div>
             <div className="text-center mx-3">
               <button className="btn btn-bizka w-100 p-3 my-3" type="submit">
-                Log in
+                {isLoading ? <span className="spinner-border"></span> : "Log in"}
               </button>{" "}
             </div>
             <p className="text-center">

@@ -13,7 +13,7 @@ import Frame58 from "../assets/Frame58.png";
 import Frame59 from "../assets/Frame59.png";
 import Vector from "../assets/Vector.png";
 import Footer from "../layouts/Footer";
-import Header1 from "./Header1";
+import Header1 from "../layouts/Header1";
 
 const Blog = () => {
   return (
