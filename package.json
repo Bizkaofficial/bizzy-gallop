@@ -22,7 +22,7 @@
     "react-jwt": "^1.1.6",
     "react-redux": "^7.2.8",
     "react-router-dom": "^6.2.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "redux": "^4.1.2",
     "redux-thunk": "^2.4.1",
     "web-vitals": "^0.2.4",
@@ -41,7 +41,7 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "start": "PORT=8001 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

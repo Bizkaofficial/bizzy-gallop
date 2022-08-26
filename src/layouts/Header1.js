@@ -6,7 +6,7 @@ const Header1 = () => {
     <nav className="navbar navbar-expand-sm navbar-light bg-white">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand h1">
-          <img src={Logo} alt="" width={181} height={42} />
+          <img src={Logo} alt="" height={40} />
         </Link>
         <button
           class="navbar-toggler"
@@ -53,7 +53,7 @@ const Header1 = () => {
         </div>
 
         <div className="flex">
-          <ul className="d-flex mr-3 gap-4 my-auto">
+          <ul className="d-flex gap-3 my-auto">
             <li className="list-inline-item">
               <Link to="/accounts/login">
                 <button

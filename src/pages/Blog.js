@@ -20,10 +20,10 @@ const Blog = () => {
     <>
     <Header1 />
     <div className="container">
-      <div className="row mx-3">
+      <div className="row">
         <div className="col-md-6 align-self-end">
-          <h1 className="mb-5">Data is Life</h1>
-          <p className="mt-4 lh-lg">
+          <h1 className="mb-4">Data is Life</h1>
+          <p className="lh-lg">
             Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, dis
             pulvinar purus ultricies posuere nisi justo, placerat cum
             pellentesque primis tempus accumsan aenean. Cras mattis sociosqu
@@ -50,7 +50,7 @@ const Blog = () => {
       </div>
       <h4 className="mx-3">Latest Posts</h4>
       <hr />
-      <div className="row mt-5">
+      <div className="row mt-3">
         <div className="col-md-7">
           <div className='firstCard'>
             <img alt='' src={Frame50} className='w-100' height={250} />
@@ -77,7 +77,7 @@ const Blog = () => {
             </p>
           </div>
         </div>
-        <div className="col-md-5 p-5">
+        <div className="col-md-5 mt-5">
           <div className="input-group">
             <input
               type="text"
@@ -227,14 +227,14 @@ const Blog = () => {
           <p className='text-white fs-1' style={{fontWeight: 'bolder'}}>Ready to share your projects?</p>
         </div>
         <div className='col-md-6 p-3'>
-          <div className='d-flex flex-column flex-md-row mt-4 px-2'>
-            <button className='btn btn-lg btn-light text-primary mx-2 py-3 my-1 rounded-pill' style={{fontWeight: 'bold'}}>Let's get started</button>
-            <button className='btn btn-lg border text-white mx-2 px-5 my-1 rounded-pill' style={{fontWeight: 'bold'}}>Contact Us</button>
+          <div className='d-flex flex-column gap-3 flex-md-row mt-4'>
+            <button className='btn btn-lg btn-light text-primary rounded-pill' style={{fontWeight: 'bold'}}>Let's get started</button>
+            <button className='btn btn-lg border text-white rounded-pill' style={{fontWeight: 'bold'}}>Contact Us</button>
           </div>
         </div>
       </div>
-      <Footer />
     </div>
+    <Footer />
     </>
   );
 };

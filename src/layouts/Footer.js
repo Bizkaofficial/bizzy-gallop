@@ -11,8 +11,8 @@ const Footer = () => {
   const logoUrl = "https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/240584989_173622064794381_4485450073447507273_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=106&ccb=1-5&_nc_sid=dd9801&_nc_ohc=GAuAYNnQhUYAX_dVVj1&_nc_ht=scontent-los2-1.xx&oh=00_AT-21u1XYljMTSNYE4nC9Pj-TwfGBhBzs9mopxmiIf69lw&oe=624D2B6C";
 
   return (
-    <div className="container ">
-      <footer className="d-flex justify-content-around page-footer row row-cols mt-10 bg-light">
+    <div className="container-fluid">
+      <footer className="d-flex justify-content-around page-footer row row-cols mt-10 bg-light px-5">
         <div className="col">
           <div className="nav flex-column mb-3 link-dark">
             <div className="">
@@ -119,7 +119,7 @@ const Footer = () => {
           </ul>
         </div>
       </footer>
-      <div>
+      <div className="px-5">
         <div className="col col-lg-3 mt-2">
           <ul className="nav justify-space-between gap-4 list-unstyled list-inline d-flex">
             <li className="list-inline-item">
@@ -157,7 +157,7 @@ const Footer = () => {
         className="bg-dark mt-4  d-inline-block "
         style={{ width: "100%", height: "2px" }}
       />
-      <div className="row-md-2 col-lg-12 d-flex justify-content-end list-inline py-3">
+      <div className="row-md-2 col-lg-12 d-flex justify-content-end list-inline px-5 py-3">
         <li className="list-inline-item">
           <Link className="col text-decoration-none text-black" to="#">
             Privacy and Security

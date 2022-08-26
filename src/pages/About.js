@@ -1,15 +1,16 @@
 import flexImg from "../assets/About_img_1.jpeg";
 import flexImg2 from "../assets/About_img_2.jpeg";
 import flexImg3 from "../assets/About_img_3.jpeg";
+import Footer from "../layouts/Footer";
 import Header1 from "../layouts/Header1";
 const About = () => {
   return (
     <>
       <Header1 />
-      <div className="container-fluid">
-        <div className="row row-cols-1 row-cols-md-2 mx-auto my-5">
-          <div className="col">
-            <h1 className="pb-4">
+      <div className="container">
+        <div className="row my-5">
+          <div className="col-md-6">
+            <h1 className="pb-2">
               We want to help Data Analysts build their career
             </h1>
             <p className="fs-5">
@@ -19,27 +20,24 @@ const About = () => {
               a glance.
             </p>
           </div>
-          <div className="col">
+          <div className="col-md-6">
             <img
               src={flexImg}
-              className="about-img"
-              width={470}
-              height={300}
+              className="about-img w-100 w-75"
               alt=""
             />
           </div>
         </div>
-        <div className="row ">
-          <div className="col p-4 ">
+
+        <div className="row my-3">
+          <div className="col-md-6">
             <img
               src={flexImg2}
-              className=" round "
-              width={500}
-              height={330}
+              className="round w-100 w-75"
               alt=""
             />
           </div>
-          <div className="col">
+          <div className="col-md-6">
             <h1>Our Story</h1>
             <p className="fs-5">
               Bizka started with a team of 7 persons who wanted to help
@@ -56,9 +54,10 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="mt-1">
+        
+        <div className="my-5">
           <h1 className="text-center">Leadership Team</h1>
-          <div className="d-flex justify-content-center p-4">
+          <div className="d-flex flex-wrap justify-content-center">
             <div className="p-2 ">
               <img
                 src={flexImg3}
@@ -96,7 +95,7 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="d-flex justify-content-center p-4">
+          <div className="d-flex flex-wrap justify-content-center p-4">
             <div className="p-2">
               <img
                 src={flexImg3}
@@ -136,6 +135,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
