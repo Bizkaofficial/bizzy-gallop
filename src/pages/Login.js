@@ -24,7 +24,7 @@ const Login = () => {
 
   const formik = useFormik({
     initialValues: {
-      username: "",
+      email: "",
       password: "",
     },
     validationSchema: Yup.object({
@@ -64,9 +64,7 @@ const Login = () => {
   });
 
   const addStyle = {
-    backgroundImage: `url(${sideImg})`,
-    // backgroundColor: `rgba(70, 100, 190, 0.6)`,
-    // width: "50vw",
+    backgroundImage: `linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.4)), url(${sideImg})`,
     height: "100vh",
     backgroundSize: "cover",
   };
@@ -74,7 +72,7 @@ const Login = () => {
   return (
     <div>
       <div className="d-flex flex-column flex-lg-row">
-        <div className="col-lg-6 col-12" style={addStyle}>
+        <div className="d-none d-lg-block col-lg-6 col-12" style={addStyle}>
           <div className="text-center mt-5 py-5 col-6 container">
             <div className="mt-5 p-5"></div>
             <div className="text-center container">
@@ -111,18 +109,18 @@ const Login = () => {
             <input
               type="text"
               placeholder="Email/Username"
-              name="username"
+              name="email"
               className={
-                formik.touched.username && formik.errors.username
+                formik.touched.email && formik.errors.email
                   ? "my-2 bizka-form bizka-invalid"
                   : "my-2 bizka-form"
               }
-              value={formik.values.username}
+              value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {formik.touched.username ? (
-              <div className="text-danger">{formik.errors.username}</div>
+            {formik.touched.email ? (
+              <div className="text-danger">{formik.errors.email}</div>
             ) : null}
             <input
               type={showPwd ? `text` : `password`}
