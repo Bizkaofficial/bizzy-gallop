@@ -10,10 +10,9 @@ import { useDispatch } from "react-redux";
 import { login } from "../actions";
 
 const Login = () => {
-
   useEffect(() => {
     document.title = "Bizka || Login";
-  })
+  });
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -24,27 +23,21 @@ const Login = () => {
 
   const formik = useFormik({
     initialValues: {
-      username: "",
+      email: "",
       password: "",
     },
     validationSchema: Yup.object({
-      username: Yup.string().required("Required"),
+      email: Yup.string().required("Required"),
       password: Yup.string().required("Required"),
     }),
     onSubmit: (values) => {
       setIsLoading(true);
       const bizka = {};
-      bizka.email = values.username;
+      bizka.email = values.email;
       bizka.password = values.password;
-      // console.log(bizka);
       setErrorss(false);
       axios
-        .post(
-          "https://bizka.herokuapp.com/auth/login/",
-          bizka
-          // {"email": bizka.email, "password": bizka.password}
-          // { proxy: { port: 8001 } }
-        )
+        .post("https://bizka.onrender.com/auth/login/", bizka)
         .then((res) => {
           setIsLoading(false);
           setErrorss(false);
@@ -58,7 +51,7 @@ const Login = () => {
         })
         .catch((err) => {
           setIsLoading(false);
-          setErrorss(err.message);
+          setErrorss("Invalid credentials, try again");
         });
     },
   });
@@ -106,23 +99,25 @@ const Login = () => {
               />
               <h3 className="h3">Log in</h3>
             </div>
-            {Errorss ? <div className="alert alert-danger text-danger">{Errorss}</div> : null}
+            {Errorss ? (
+              <div className="alert alert-danger text-danger">{Errorss}</div>
+            ) : null}
             <div className="g-signin2" data-onsuccess="onSignIn"></div>
             <input
               type="text"
-              placeholder="Email/Username"
-              name="username"
+              placeholder="Email"
+              name="email"
               className={
-                formik.touched.username && formik.errors.username
+                formik.touched.email && formik.errors.email
                   ? "my-2 bizka-form bizka-invalid"
                   : "my-2 bizka-form"
               }
-              value={formik.values.username}
+              value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            {formik.touched.username ? (
-              <div className="text-danger">{formik.errors.username}</div>
+            {formik.touched.email ? (
+              <div className="text-danger">{formik.errors.email}</div>
             ) : null}
             <input
               type={showPwd ? `text` : `password`}
@@ -152,7 +147,11 @@ const Login = () => {
             </div>
             <div className="text-center mx-3">
               <button className="btn btn-bizka w-100 p-3 my-3" type="submit">
-                {isLoading ? <span className="spinner-border"></span> : "Log in"}
+                {isLoading ? (
+                  <span className="spinner-border"></span>
+                ) : (
+                  "Log in"
+                )}
               </button>{" "}
             </div>
             <p className="text-center">
