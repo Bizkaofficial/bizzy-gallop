@@ -46,23 +46,11 @@ const Register = () => {
     onSubmit: (values) => {
       axios.post('https://bizka.herokuapp.com/auth/register', values).then((res)=>{
         console.log(res);
-        navigate("/accounts/login")
+        navigate("/accounts/login");
       }).catch((err)=>{
         console.log(err)
       })
       setErrorss("");
-      // try {
-      //   let bizka = {};
-      //   bizka.first_name = values.first_name;
-      //   bizka.last_name = values.last_name;
-      //   bizka.email = values.email;
-      //   bizka.username = values.username;
-      //   bizka.phone_number = values.phone_number;
-      //   bizka.password = values.password;
-      //   dispatch(registerUser(bizka));
-      // } catch (err) {
-      //   console.log(err);
-      // }
     },
   });
 
