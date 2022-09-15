@@ -22,9 +22,9 @@ const ForgotPassword = () => {
   })
 
   return (
-    <div className="container">
+    <article className="container">
       <div className="row">
-        <div className="container mt-4 pt-5 text-center col-lg-6 col-md-12 col-sm-12">
+        <div className="text-center col-lg-6 col-md-12 col-sm-12 pt-5 mt-5 mx-auto">
           <img
             src={bizkaLogo}
             alt="bizka logo"
@@ -58,7 +58,7 @@ const ForgotPassword = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 
