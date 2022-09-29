@@ -42,7 +42,7 @@ const Login = () => {
       setErrorss(false);
       axios
         .post(
-          "http://bizka.onrender.com/auth/login/",
+          "https://bizka.onrender.com/auth/login/",
           bizka
           // {"email": bizka.email, "password": bizka.password}
           // { proxy: { port: 8001 } }

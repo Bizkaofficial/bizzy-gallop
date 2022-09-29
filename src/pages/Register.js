@@ -46,7 +46,7 @@ const Register = () => {
       phone_number: Yup.string().required("Required"),
     }),
     onSubmit: (values) => {
-      axios.post('http://bizka.onrender.com/auth/register', values).then((res)=>{
+      axios.post('https://bizka.onrender.com/auth/register', values).then((res)=>{
         console.log(res);
         navigate("/accounts/login")
       }).catch((err)=>{
