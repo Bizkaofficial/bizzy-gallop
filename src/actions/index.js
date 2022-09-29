@@ -6,7 +6,7 @@ const registerUser = (user) => {
         payload: user
     }
     // return (dispatch)=>{
-    //     return axios.post('https://bizka.herokuapp.com/auth/register', user).then((res)=>{
+    //     return axios.post('http://bizka.onrender.com/auth/register', user).then((res)=>{
     //         console.log(res)
     //         dispatch({type: 'REGISTER_USER', payload: {response: res, error: ''}})
     //     }).catch((err)=>{
