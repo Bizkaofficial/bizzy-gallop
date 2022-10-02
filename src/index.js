@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.css'
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import allReducers from './reducers';
-import { applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
+import { applyMiddleware } from 'redux';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import reportWebVitals from './reportWebVitals';
+import allReducers from './reducers';
+import './index.css';
+import App from './App';
 // , window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 const store = createStore(allReducers, applyMiddleware(thunk));
 
